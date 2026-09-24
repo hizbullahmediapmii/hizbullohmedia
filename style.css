@@ -624,7 +624,15 @@ section {
         font-size: 11px;
     }
 }
+@media (max-width: 1100px) and (min-width: 851px) {
+    nav {
+        gap: 18px;
+    }
 
+    nav a {
+        font-size: 13px;
+    }
+}
 @media (max-width: 850px) {
     .menu-btn {
         display: block;
