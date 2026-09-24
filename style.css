@@ -614,4 +614,40 @@ section {
 ::selection {
   background: #0878d1;
   color: #ffffff;
+}/* HEADER RESPONSIVE */
+@media (max-width: 1000px) {
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: #062b49;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
 }
