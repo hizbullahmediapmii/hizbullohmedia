@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Artikel Keislaman Hizbullah Media">
+
+    <title>Keislaman | Hizbullah Media</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="index.html#opini">Opini</a>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="section">
+
+    <div class="container">
+
+        <span class="section-label">
+            KEISLAMAN
+        </span>
+
+        <h1 style="font-size:clamp(2.4rem,6vw,4.5rem); max-width:900px; margin:20px 0;">
+            Islam, Keilmuan dan Pergerakan Mahasiswa
+        </h1>
+
+        <p style="color:#777; font-size:1.1rem; margin-bottom:50px;">
+            Hizbullah Media · 25 September 2026
+        </p>
+
+        <div class="news-image"
+             style="height:420px; border-radius:24px; display:flex; align-items:center; justify-content:center; margin-bottom:50px;">
+
+            <span style="font-size:2rem; font-weight:700; color:white; letter-spacing:4px;">
+                HIZBULLAH MEDIA
+            </span>
+
+        </div>
+
+        <div style="max-width:850px; font-size:1.2rem; line-height:2; color:#4b5563;">
+
+            <p>
+                Keislaman menjadi salah satu ruang penting dalam proses
+                pembentukan karakter dan wawasan mahasiswa. Islam tidak hanya
+                dipahami sebagai ajaran, tetapi juga menjadi sumber nilai
+                dalam menjalani kehidupan.
+            </p>
+
+            <p>
+                Mahasiswa memiliki kesempatan untuk memperdalam ilmu,
+                berdiskusi, membaca berbagai pemikiran, serta mengembangkan
+                sikap yang terbuka terhadap perkembangan zaman.
+            </p>
+
+            <p>
+                Tradisi keilmuan menjadi bagian penting dalam perjalanan
+                kader. Membaca, berdiskusi, menulis, dan berdialog dapat
+                menjadi sarana untuk memperluas wawasan serta memperkuat
+                pemahaman terhadap berbagai persoalan.
+            </p>
+
+            <p>
+                Dalam kehidupan pergerakan mahasiswa, nilai-nilai keislaman
+                juga dapat menjadi landasan untuk membangun kepedulian,
+                keadilan, kemanusiaan, dan pengabdian kepada masyarakat.
+            </p>
+
+            <p>
+                Hizbullah Media menghadirkan ruang keislaman sebagai tempat
+                berbagi gagasan, refleksi, dan pengetahuan yang dapat
+                memberikan manfaat bagi pembaca.
+            </p>
+
+        </div>
+
+        <div style="margin-top:50px;">
+
+            <a href="index.html#artikel" class="btn btn-primary">
+                ← Kembali ke Artikel
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <div class="footer-brand">
+                HIZBULLAH MEDIA
+            </div>
+
+            <p>
+                Media Informasi & Pergerakan
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Navigasi</h3>
+
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="index.html#opini">Opini</a>
+
+        </div>
+
+        <div>
+
+            <h3>Hizbullah</h3>
+
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+
+        <p>
+            © 2026 Hizbullah Media.
+        </p>
+
+        <p>
+            PMII Angkatan Hizbullah
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuBtn.innerHTML = isOpen ? "✕" : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
