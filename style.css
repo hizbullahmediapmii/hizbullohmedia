@@ -687,4 +687,17 @@ section {
     nav a {
         font-size: 14px;
     }
+}@media (max-width: 850px) {
+    nav {
+        display: none !important;
+    }
+
+    nav.active {
+        display: flex !important;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+    }
 }
