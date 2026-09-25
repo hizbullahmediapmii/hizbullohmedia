@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kegiatan PMII Angkatan Hizbullah - Hizbullah Media">
+    <title>Kegiatan | Hizbullah Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+
+            <span class="eyebrow">AKTIVITAS HIZBULLAH</span>
+
+            <h1>KEGIATAN <span>HIZBULLAH</span></h1>
+
+            <p>
+                Dokumentasi aktivitas, kaderisasi, pengabdian,
+                dan pergerakan PMII Angkatan Hizbullah.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">AKTIVITAS</span>
+                <h2>Kegiatan Hizbullah</h2>
+            </div>
+        </div>
+
+        <div class="activity-grid">
+
+            <div class="activity-item">
+                <strong>01</strong>
+                <h3>Kaderisasi</h3>
+                <p>
+                    Kegiatan kaderisasi sebagai ruang belajar,
+                    pembentukan karakter, dan pengembangan kapasitas kader.
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <strong>02</strong>
+                <h3>Pengabdian</h3>
+                <p>
+                    Aktivitas sosial dan pengabdian sebagai bentuk
+                    kontribusi kepada masyarakat.
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <strong>03</strong>
+                <h3>Pergerakan</h3>
+                <p>
+                    Berbagai aktivitas dan dinamika pergerakan
+                    kader PMII Angkatan Hizbullah.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section section-light">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">DOKUMENTASI</span>
+                <h2>Dokumentasi Kegiatan</h2>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <span>Kegiatan 01</span>
+            </div>
+
+            <div class="gallery-item">
+                <span>Kegiatan 02</span>
+            </div>
+
+            <div class="gallery-item">
+                <span>Kegiatan 03</span>
+            </div>
+
+            <div class="gallery-item">
+                <span>Kegiatan 04</span>
+            </div>
+
+            <div class="gallery-item">
+                <span>Kegiatan 05</span>
+            </div>
+
+            <div class="gallery-item">
+                <span>Kegiatan 06</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-brand">
+                HIZBULLAH MEDIA
+            </div>
+            <p>Media Informasi & Pergerakan</p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+        </div>
+
+        <div>
+            <h3>Hizbullah</h3>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Hizbullah Media.</p>
+        <p>PMII Angkatan Hizbullah</p>
+    </div>
+
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuBtn.innerHTML = isOpen ? "✕" : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
