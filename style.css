@@ -662,7 +662,11 @@ section {
     .menu-btn {
         display: block;
     }
-
+.header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
     nav {
         display: none;
         position: absolute;
