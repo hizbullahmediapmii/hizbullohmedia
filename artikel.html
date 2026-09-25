@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel | Hizbullah Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="opini.html">Opini</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="angkatan.html">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="eyebrow">WAWASAN & PEMIKIRAN</span>
+            <h1>ARTIKEL <span>HIZBULLAH</span></h1>
+            <p>
+                Kumpulan tulisan mengenai keislaman,
+                kebangsaan, pendidikan, dan pergerakan.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">WAWASAN</span>
+                <h2>Jelajahi Artikel</h2>
+            </div>
+        </div>
+
+        <div class="article-grid">
+
+            <article class="article-box">
+                <span class="article-number">01</span>
+                <h3>Keislaman</h3>
+                <p>
+                    Gagasan dan tulisan seputar keislaman,
+                    kehidupan umat, dan nilai keagamaan.
+                </p>
+                <a href="artikel-keislaman.html">
+                    Jelajahi →
+                </a>
+            </article>
+
+            <article class="article-box">
+                <span class="article-number">02</span>
+                <h3>Kebangsaan</h3>
+                <p>
+                    Pemikiran mengenai kebangsaan,
+                    keberagaman, dan kehidupan Indonesia.
+                </p>
+                <a href="artikel-kebangsaan.html">
+                    Jelajahi →
+                </a>
+            </article>
+
+            <article class="article-box">
+                <span class="article-number">03</span>
+                <h3>Pendidikan</h3>
+                <p>
+                    Tulisan mengenai pendidikan dan
+                    pengembangan generasi muda.
+                </p>
+                <a href="artikel-pendidikan.html">
+                    Jelajahi →
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-brand">HIZBULLAH MEDIA</div>
+            <p>Media Informasi & Pergerakan</p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="opini.html">Opini</a>
+        </div>
+
+        <div>
+            <h3>Hizbullah</h3>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="angkatan.html">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Hizbullah Media.</p>
+        <p>PMII Angkatan Hizbullah</p>
+    </div>
+
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
+    menuBtn.innerHTML =
+        mainNav.classList.contains("active") ? "✕" : "☰";
+});
+</script>
+
+</body>
+</html>
