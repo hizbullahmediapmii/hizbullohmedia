@@ -633,7 +633,18 @@ section {
 
     nav a {
         font-size: 13px;
+    }.menu-btn {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .menu-btn {
+        display: block;
     }
+
+    nav {
+        display: none;
+        ...
 }
 @media (max-width: 850px) {
     .menu-btn {
