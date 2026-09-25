@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahasiswa dan Tanggung Jawab Perubahan - Hizbullah Media">
+    <title>Mahasiswa dan Tanggung Jawab Perubahan | Hizbullah Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="section">
+    <div class="container">
+
+        <span class="section-label">OPINI</span>
+
+        <h1 style="margin-top: 15px;">
+            Mahasiswa dan Tanggung Jawab Perubahan
+        </h1>
+
+        <p style="color: #777; margin-top: 10px;">
+            Hizbullah Media • Ruang Opini
+        </p>
+
+        <div class="about-text" style="margin-top: 40px; max-width: 850px;">
+
+            <p>
+                Mahasiswa tidak hanya berada di ruang kelas untuk
+                memperoleh pengetahuan. Dalam perjalanan sejarah,
+                mahasiswa juga menjadi bagian dari kehidupan masyarakat
+                dan ikut membaca berbagai persoalan yang terjadi di
+                lingkungan sekitarnya.
+            </p>
+
+            <p>
+                Pendidikan memberikan mahasiswa kemampuan untuk
+                berpikir secara kritis, sementara organisasi menjadi
+                salah satu ruang untuk belajar bekerja sama,
+                berdiskusi, dan memahami realitas sosial.
+            </p>
+
+            <p>
+                Tanggung jawab perubahan tidak selalu harus dimulai
+                dari sesuatu yang besar. Kepedulian terhadap lingkungan,
+                keberanian menyampaikan gagasan, membantu masyarakat,
+                serta membangun budaya belajar merupakan bagian dari
+                proses perubahan.
+            </p>
+
+            <p>
+                Karena itu, mahasiswa perlu menjaga keseimbangan
+                antara pengetahuan dan tindakan. Ilmu yang diperoleh
+                seharusnya dapat menjadi bekal untuk memberikan manfaat
+                bagi lingkungan dan masyarakat.
+            </p>
+
+            <p>
+                Perubahan membutuhkan proses yang panjang. Setiap
+                generasi memiliki tantangan yang berbeda dan mahasiswa
+                memiliki kesempatan untuk mengambil bagian melalui
+                pendidikan, pengabdian, diskusi, dan pergerakan.
+            </p>
+
+            <p>
+                Pada akhirnya, menjadi mahasiswa bukan hanya tentang
+                mendapatkan gelar, tetapi juga tentang bagaimana
+                pengetahuan dan pengalaman dapat memberikan manfaat
+                bagi kehidupan bersama.
+            </p>
+
+        </div>
+
+        <div style="margin-top: 40px;">
+            <a href="opini.html" class="btn btn-primary">
+                ← Kembali ke Opini
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-brand">
+                HIZBULLAH MEDIA
+            </div>
+            <p>Media Informasi & Pergerakan</p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+        </div>
+
+        <div>
+            <h3>Hizbullah</h3>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Hizbullah Media.</p>
+        <p>PMII Angkatan Hizbullah</p>
+    </div>
+
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuBtn.innerHTML = isOpen ? "✕" : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
