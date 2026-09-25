@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PMII Angkatan Hizbullah - Hizbullah Media">
+    <title>Angkatan Hizbullah | Hizbullah Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="angkatan.html">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+
+            <span class="eyebrow">IDENTITAS & PERJALANAN</span>
+
+            <h1>ANGKATAN <span>HIZBULLAH</span></h1>
+
+            <p>
+                Mengenal perjalanan, nilai, dan semangat
+                PMII Angkatan Hizbullah.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+                <span class="section-label">TENTANG ANGKATAN</span>
+
+                <h2>PMII Angkatan Hizbullah</h2>
+            </div>
+
+            <div class="about-text">
+
+                <p>
+                    PMII Angkatan Hizbullah merupakan bagian dari
+                    perjalanan kaderisasi dan pergerakan mahasiswa
+                    yang tumbuh melalui proses belajar, berdiskusi,
+                    berorganisasi, dan mengabdi.
+                </p>
+
+                <p>
+                    Angkatan menjadi ruang untuk membangun
+                    kebersamaan, memperkuat silaturahmi, serta
+                    mengembangkan potensi setiap kader.
+                </p>
+
+                <p>
+                    Semangat belajar dan berproses menjadi bagian
+                    penting dalam perjalanan Angkatan Hizbullah.
+                    Setiap kegiatan dan pengalaman menjadi bagian
+                    dari dokumentasi perjalanan bersama.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section section-blue">
+
+    <div class="container">
+
+        <div class="profile-section">
+
+            <div class="profile-badge">
+                H
+            </div>
+
+            <div class="profile-content">
+
+                <span class="section-label light">
+                    HIZBULLAH
+                </span>
+
+                <h2>
+                    Belajar, Berproses, dan Mengabdi
+                </h2>
+
+                <p>
+                    Menjadikan proses kaderisasi sebagai ruang
+                    untuk bertumbuh dan memberikan manfaat bagi
+                    lingkungan dan masyarakat.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">NILAI</span>
+                <h2>Semangat Angkatan</h2>
+            </div>
+        </div>
+
+        <div class="activity-grid">
+
+            <div class="activity-item">
+                <strong>01</strong>
+                <h3>Belajar</h3>
+                <p>
+                    Terus memperluas pengetahuan melalui
+                    membaca, berdiskusi, dan pengalaman.
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <strong>02</strong>
+                <h3>Berproses</h3>
+                <p>
+                    Menjalani setiap tahapan organisasi sebagai
+                    bagian dari perjalanan pembentukan diri.
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <strong>03</strong>
+                <h3>Mengabdi</h3>
+                <p>
+                    Mengembangkan kepedulian dan kontribusi
+                    kepada masyarakat.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-brand">
+                HIZBULLAH MEDIA
+            </div>
+
+            <p>
+                Media Informasi & Pergerakan
+            </p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+        </div>
+
+        <div>
+            <h3>Hizbullah</h3>
+
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="angkatan.html">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+
+        <p>© 2026 Hizbullah Media.</p>
+        <p>PMII Angkatan Hizbullah</p>
+
+    </div>
+
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuBtn.innerHTML = isOpen ? "✕" : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
