@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hizbullah Media - Peristiwa dan Informasi Daerah">
+    <title>Peristiwa dan Informasi Daerah | Hizbullah Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="index.html#opini">Opini</a>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="section">
+    <div class="container">
+
+        <span class="section-label">BERITA DAERAH</span>
+
+        <h1 style="font-size: clamp(2.4rem, 6vw, 4.5rem); max-width: 900px; margin: 20px 0;">
+            Peristiwa dan Informasi Daerah
+        </h1>
+
+        <p style="color:#777; font-size:1.1rem; margin-bottom:50px;">
+            Hizbullah Media · 25 September 2026
+        </p>
+
+        <div class="news-image" style="height:420px; border-radius:24px; display:flex; align-items:center; justify-content:center; margin-bottom:50px;">
+            <span style="font-size:2rem; font-weight:700; color:white; letter-spacing:4px;">
+                HIZBULLAH MEDIA
+            </span>
+        </div>
+
+        <div style="max-width:850px; font-size:1.2rem; line-height:2; color:#4b5563;">
+
+            <p>
+                Daerah merupakan ruang kehidupan masyarakat yang memiliki
+                beragam dinamika, potensi, dan persoalan yang terus berkembang.
+            </p>
+
+            <p>
+                Berbagai peristiwa yang terjadi di lingkungan daerah menjadi
+                bagian penting untuk diketahui oleh masyarakat. Informasi yang
+                baik dapat membantu masyarakat memahami perkembangan di
+                sekitarnya.
+            </p>
+
+            <p>
+                Hizbullah Media berupaya menghadirkan informasi mengenai
+                berbagai kegiatan, peristiwa, dan perkembangan yang terjadi
+                di lingkungan daerah.
+            </p>
+
+            <p>
+                Melalui publikasi dan dokumentasi, berbagai informasi daerah
+                diharapkan dapat menjadi ruang berbagi pengetahuan sekaligus
+                memperkuat kepedulian terhadap lingkungan sekitar.
+            </p>
+
+        </div>
+
+        <div style="margin-top:50px;">
+            <a href="berita.html" class="btn btn-primary">
+                ← Kembali ke Berita
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-brand">HIZBULLAH MEDIA</div>
+            <p>Media Informasi & Pergerakan</p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="index.html#opini">Opini</a>
+        </div>
+
+        <div>
+            <h3>Hizbullah</h3>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Hizbullah Media.</p>
+        <p>PMII Angkatan Hizbullah</p>
+    </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuBtn.innerHTML = isOpen ? "✕" : "☰";
+});
+</script>
+
+</body>
+</html>
