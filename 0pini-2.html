@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tradisi Membaca dan Berdiskusi - Hizbullah Media">
+    <title>Tradisi Membaca dan Berdiskusi | Hizbullah Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="brand">
+            <span class="brand-main">HIZBULLAH</span>
+            <span class="brand-sub">MEDIA</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+<section class="section">
+    <div class="container">
+
+        <span class="section-label">OPINI</span>
+
+        <h1 style="margin-top: 15px;">
+            Tradisi Membaca dan Berdiskusi
+        </h1>
+
+        <p style="color: #777; margin-top: 10px;">
+            Hizbullah Media • Ruang Opini
+        </p>
+
+        <div class="about-text" style="margin-top: 40px; max-width: 850px;">
+
+            <p>
+                Membaca merupakan salah satu kebiasaan penting dalam
+                membangun kemampuan berpikir. Melalui membaca, seseorang
+                dapat mengenal berbagai gagasan, pengalaman, dan
+                perspektif yang berbeda.
+            </p>
+
+            <p>
+                Bagi mahasiswa, membaca tidak seharusnya hanya dilakukan
+                ketika menghadapi tugas perkuliahan. Membaca dapat menjadi
+                bagian dari kebiasaan sehari-hari untuk memperluas
+                wawasan dan memahami berbagai persoalan.
+            </p>
+
+            <p>
+                Namun membaca juga perlu diikuti dengan diskusi.
+                Berdiskusi memberikan kesempatan untuk menguji gagasan,
+                mendengarkan pandangan orang lain, serta menemukan
+                pemahaman yang lebih luas.
+            </p>
+
+            <p>
+                Dalam organisasi mahasiswa, tradisi membaca dan berdiskusi
+                dapat menjadi bagian penting dari proses kaderisasi.
+                Forum diskusi dapat menjadi ruang untuk belajar berbicara,
+                mendengarkan, menyampaikan argumentasi, dan menghargai
+                perbedaan pendapat.
+            </p>
+
+            <p>
+                Budaya intelektual tidak terbentuk dalam waktu singkat.
+                Ia membutuhkan kebiasaan yang dilakukan secara terus
+                menerus. Membaca satu tulisan, mendiskusikannya, kemudian
+                mencoba menuliskan kembali pemahaman merupakan proses
+                sederhana yang dapat dilakukan siapa saja.
+            </p>
+
+            <p>
+                Karena itu, membaca, berdiskusi, dan menulis perlu
+                ditempatkan sebagai bagian dari perjalanan belajar.
+                Ketiganya dapat membantu mahasiswa membangun cara
+                berpikir yang lebih terbuka dan bertanggung jawab.
+            </p>
+
+        </div>
+
+        <div style="margin-top: 40px;">
+            <a href="opini.html" class="btn btn-primary">
+                ← Kembali ke Opini
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <div class="footer-brand">
+                HIZBULLAH MEDIA
+            </div>
+            <p>Media Informasi & Pergerakan</p>
+        </div>
+
+        <div>
+            <h3>Navigasi</h3>
+            <a href="index.html">Beranda</a>
+            <a href="berita.html">Berita</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="opini.html">Opini</a>
+        </div>
+
+        <div>
+            <h3>Hizbullah</h3>
+            <a href="index.html#kegiatan">Kegiatan</a>
+            <a href="index.html#angkatan">Angkatan</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="index.html#tentang">Tentang Kami</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© 2026 Hizbullah Media.</p>
+        <p>PMII Angkatan Hizbullah</p>
+    </div>
+
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const mainNav = document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+
+    mainNav.classList.toggle("active");
+
+    const isOpen = mainNav.classList.contains("active");
+
+    menuBtn.innerHTML = isOpen ? "✕" : "☰";
+
+});
+
+</script>
+
+</body>
+</html>
