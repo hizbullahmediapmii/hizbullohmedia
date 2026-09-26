@@ -716,8 +716,16 @@ a {
         min-height: 70px;
     }
 
-    .menu-btn {
-        display: block;
+   .menu-toggle {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  box-shadow: none;
+  outline: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 24px;
+}
     }
 
     .main-nav {
