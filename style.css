@@ -1020,3 +1020,59 @@ section {
     max-width: 100% !important;
   }
 }
+/* ===== PERBAIKAN HERO HP ===== */
+
+@media (max-width: 850px) {
+
+  .hero {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 70px 16px 70px 16px !important;
+  }
+
+  .hero-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .hero-text h1 {
+    font-size: 48px !important;
+    line-height: 1.05 !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .hero-text p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+  .eyebrow {
+    font-size: 12px !important;
+    letter-spacing: 3px !important;
+    white-space: normal !important;
+  }
+
+  .hero-actions {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+
+  .hero-actions .btn {
+    flex: 1 1 150px !important;
+    min-width: 0 !important;
+  }
+}
