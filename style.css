@@ -975,22 +975,26 @@ a {
 }
 
 .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.10);
+    padding: 24px 16px;
     display: flex;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    padding: 20px 0;
-
-    border-top:
-        1px solid
-        rgba(255,255,255,.1);
-
-    color:
-        rgba(255,255,255,.5);
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    color: rgba(255,255,255,.5);
     font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom p:last-child {
+    color: #f5c400;
+    font-weight: 600;
 }
 
 /* =========================================================
@@ -1213,8 +1217,10 @@ a {
     }
 
     .footer-bottom {
-        flex-direction: column;
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* =========================================================
