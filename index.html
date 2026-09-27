@@ -2,20 +2,26 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Hizbullah Media - Media informasi, karya kader, penelitian, opini, kegiatan, dan dokumentasi PMII Angkatan Hizbullah.">
+          content="Hizbulloh Media — rumah digital Angkatan Hizbulloh untuk merawat sejarah, generasi, karya, kegiatan, dokumentasi, dan arsip perjalanan.">
 
     <meta name="keywords"
-          content="Hizbullah Media, PMII, berita PMII, karya kader, penelitian, opini, kegiatan">
+          content="Hizbulloh Media, PMII Angkatan Hizbulloh, sejarah Hizbulloh, angkatan, kader, alumni, karya kader, kegiatan, galeri, arsip">
 
-    <meta name="author"
-          content="Hizbullah Media">
+    <meta name="author" content="Hizbulloh Media">
 
-    <title>Hizbullah Media | Media Informasi & Pergerakan</title>
+    <meta property="og:title" content="Hizbulloh Media — Sejarah, Gagasan, Pergerakan">
+    <meta property="og:description"
+          content="Rumah digital untuk sejarah, generasi, karya, kegiatan, dokumentasi, dan arsip Angkatan Hizbulloh.">
+    <meta property="og:type" content="website">
+
+    <title>Hizbulloh Media | Sejarah, Gagasan, Pergerakan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,18 +29,14 @@
 <body>
 
 <!-- ================= HEADER ================= -->
-
 <header class="site-header">
-
     <div class="container nav-wrapper">
 
-        <a href="index.html" class="brand">
-
+        <a href="index.html" class="brand" aria-label="Hizbulloh Media">
             <img
                 src="hizbullah-media-logo-web.png"
-                alt="Logo Hizbullah Media"
+                alt="Logo Hizbulloh Media"
                 class="brand-logo">
-
         </a>
 
         <button
@@ -43,148 +45,80 @@
             type="button"
             aria-label="Buka menu"
             aria-expanded="false">
-
             ☰
-
         </button>
 
-        <nav class="main-nav" id="mainNav">
-
-            <a href="index.html" class="active">
-                Beranda
-            </a>
-
-            <a href="berita.html">
-                Berita
-            </a>
-
-            <a href="artikel.html">
-                Artikel
-            </a>
-
-            <a href="opini.html">
-                Opini
-            </a>
-
-            <a href="kegiatan.html">
-                Kegiatan
-            </a>
-
-            <a href="angkatan.html">
-                Angkatan
-            </a>
-
-            <a href="galeri.html">
-                Galeri
-            </a>
-
-            <a href="tentang.html">
-                Tentang
-            </a>
-
+        <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+            <a href="index.html" class="active">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="angkatan.html">Angkatan</a>
+            <a href="kader-alumni.html">Kader & Alumni</a>
+            <a href="karya.html">Karya</a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="arsip.html">Arsip</a>
+            <a href="tentang.html">Tentang</a>
         </nav>
 
     </div>
-
 </header>
 
 
-<!-- ================= BREAKING / TERKINI ================= -->
-
+<!-- ================= IDENTITAS BAR ================= -->
 <div class="latest-bar">
-
     <div class="container latest-inner">
-
-        <span class="latest-label">
-            TERKINI
-        </span>
+        <span class="latest-label">HIZBULLOH MEDIA</span>
 
         <div class="latest-text">
-
-            <span>
-                Hizbullah Media — Ruang Informasi,
-                Gagasan, Karya dan Pergerakan
-            </span>
-
-            <span>
-                Karya Kader • Penelitian • Opini • Kegiatan
-            </span>
-
+            <span>Sejarah • Generasi • Karya • Pergerakan</span>
+            <span>Merawat Ingatan • Mendokumentasikan Perjalanan</span>
         </div>
-
     </div>
-
 </div>
 
 
 <main>
 
-
-<!-- ================= BERITA UTAMA ================= -->
-
-<section class="headline-section">
+<!-- ================= HERO ================= -->
+<section class="headline-section hero-section">
 
     <div class="container">
 
-        <div class="section-top">
+        <div class="hero-grid">
 
-            <div>
+            <article class="hero-main">
 
-                <span class="section-label">
-                    BERITA UTAMA
-                </span>
+                <a href="sejarah.html">
 
-                <h1>
-                    Informasi dan Peristiwa Terkini
-                </h1>
-
-            </div>
-
-            <a href="berita.html" class="section-link">
-                Semua Berita →
-            </a>
-
-        </div>
-
-
-        <div class="headline-grid">
-
-
-            <!-- BERITA UTAMA -->
-
-            <article class="headline-main">
-
-                <a href="berita.html">
-
-                    <div class="headline-image">
-
+                    <div class="hero-image">
                         <span class="image-placeholder">
-                            FOTO BERITA UTAMA
+                            FOTO UTAMA HIZBULLOH
                         </span>
-
                     </div>
 
-                    <div class="headline-content">
+                    <div class="hero-content">
 
-                        <span class="category">
-                            HIZBULLAH MEDIA
+                        <span class="section-label">
+                            JEJAK HIZBULLOH
                         </span>
 
-                        <h2>
-                            Ruang Informasi, Gagasan,
-                            Karya dan Pergerakan
-                        </h2>
+                        <h1>
+                            Sejarah, Gagasan,
+                            dan Perjalanan
+                            Sebuah Generasi
+                        </h1>
 
                         <p>
-                            Hizbullah Media menjadi ruang
-                            publikasi untuk berita, gagasan,
-                            karya kader, penelitian,
-                            kegiatan, dan dokumentasi.
+                            Hizbulloh Media adalah rumah digital untuk
+                            menghimpun cerita, perjalanan, karya,
+                            kegiatan, dan dokumentasi Angkatan Hizbulloh
+                            lintas generasi.
                         </p>
 
-                        <div class="article-meta">
-                            Hizbullah Media • 2026
-                        </div>
+                        <span class="read-more">
+                            Menelusuri Jejak Hizbulloh →
+                        </span>
 
                     </div>
 
@@ -193,87 +127,217 @@
             </article>
 
 
-            <!-- BERITA SAMPING -->
+            <aside class="hero-side">
 
-            <div class="headline-side">
+                <article class="hero-side-card">
+                    <span class="side-number">01</span>
 
+                    <div>
+                        <span class="category">SEJARAH</span>
 
-                <article class="side-news">
+                        <h2>
+                            Merawat cerita yang
+                            membentuk perjalanan.
+                        </h2>
 
-                    <div class="side-image">
-                        FOTO
+                        <a href="sejarah.html">
+                            Baca Sejarah →
+                        </a>
                     </div>
-
-                    <div class="side-content">
-
-                        <span class="category">
-                            PMII
-                        </span>
-
-                        <h3>
-                            Pergerakan, Kaderisasi
-                            dan Pengabdian
-                        </h3>
-
-                        <span class="article-meta">
-                            Hizbullah Media
-                        </span>
-
-                    </div>
-
                 </article>
 
 
-                <article class="side-news">
+                <article class="hero-side-card">
+                    <span class="side-number">02</span>
 
-                    <div class="side-image">
-                        FOTO
+                    <div>
+                        <span class="category">ANGKATAN</span>
+
+                        <h2>
+                            Mengenal generasi dan
+                            orang-orang di dalamnya.
+                        </h2>
+
+                        <a href="angkatan.html">
+                            Jelajahi Angkatan →
+                        </a>
                     </div>
-
-                    <div class="side-content">
-
-                        <span class="category">
-                            KAMPUS
-                        </span>
-
-                        <h3>
-                            Informasi Mahasiswa
-                            dan Kehidupan Kampus
-                        </h3>
-
-                        <span class="article-meta">
-                            Hizbullah Media
-                        </span>
-
-                    </div>
-
                 </article>
 
 
-                <article class="side-news">
+                <article class="hero-side-card">
+                    <span class="side-number">03</span>
 
-                    <div class="side-image">
-                        FOTO
+                    <div>
+                        <span class="category">ARSIP</span>
+
+                        <h2>
+                            Menyimpan dokumen,
+                            foto, dan catatan perjalanan.
+                        </h2>
+
+                        <a href="arsip.html">
+                            Buka Arsip →
+                        </a>
                     </div>
-
-                    <div class="side-content">
-
-                        <span class="category">
-                            DAERAH
-                        </span>
-
-                        <h3>
-                            Peristiwa dan Informasi
-                            Daerah
-                        </h3>
-
-                        <span class="article-meta">
-                            Hizbullah Media
-                        </span>
-
-                    </div>
-
                 </article>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TENTANG SINGKAT ================= -->
+<section class="section intro-section">
+
+    <div class="container intro-layout">
+
+        <div>
+            <span class="section-label">
+                01 — TENTANG
+            </span>
+
+            <h2>
+                Satu ruang untuk
+                merawat ingatan.
+            </h2>
+        </div>
+
+        <div>
+            <p class="lead">
+                Hizbulloh Media dikembangkan sebagai ruang digital
+                untuk mendokumentasikan perjalanan Angkatan Hizbulloh:
+                sejarah, angkatan, kader dan alumni, karya, kegiatan,
+                foto, penelitian, serta arsip.
+            </p>
+
+            <a href="profil.html" class="section-link">
+                Mengenal Hizbulloh Media →
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JEJAK HIZBULLOH ================= -->
+<section class="section dark-section" id="sejarah">
+
+    <div class="container">
+
+        <div class="section-top light">
+
+            <div>
+                <span class="section-label">
+                    02 — SEJARAH
+                </span>
+
+                <h2>
+                    Jejak Hizbulloh
+                </h2>
+            </div>
+
+            <a href="sejarah.html" class="section-link light-link">
+                Lihat Sejarah →
+            </a>
+
+        </div>
+
+
+        <div class="history-layout">
+
+            <article class="history-feature">
+
+                <div class="history-image">
+                    <span class="image-placeholder">
+                        DOKUMENTASI SEJARAH
+                    </span>
+                </div>
+
+                <div class="history-content">
+
+                    <span class="category">
+                        PERJALANAN
+                    </span>
+
+                    <h3>
+                        Dari sebuah generasi,
+                        lahir begitu banyak cerita.
+                    </h3>
+
+                    <p>
+                        Halaman sejarah menjadi ruang untuk menyusun
+                        kembali perjalanan Hizbulloh berdasarkan
+                        cerita, dokumentasi, dan arsip yang tersedia.
+                    </p>
+
+                    <a href="sejarah.html">
+                        Baca Selengkapnya →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <div class="history-list">
+
+                <a href="sejarah.html">
+                    <span>01</span>
+                    <div>
+                        <strong>
+                            Awal Perjalanan
+                        </strong>
+                        <p>
+                            Latar dan cerita awal Hizbulloh.
+                        </p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="angkatan.html">
+                    <span>02</span>
+                    <div>
+                        <strong>
+                            Lintas Angkatan
+                        </strong>
+                        <p>
+                            Generasi yang tumbuh dalam perjalanan.
+                        </p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="kader-alumni.html">
+                    <span>03</span>
+                    <div>
+                        <strong>
+                            Kader & Alumni
+                        </strong>
+                        <p>
+                            Orang-orang dan jejaring perjalanan.
+                        </p>
+                    </div>
+                    <b>→</b>
+                </a>
+
+                <a href="arsip.html">
+                    <span>04</span>
+                    <div>
+                        <strong>
+                            Arsip Perjalanan
+                        </strong>
+                        <p>
+                            Dokumen dan rekaman yang disimpan.
+                        </p>
+                    </div>
+                    <b>→</b>
+                </a>
 
             </div>
 
@@ -284,158 +348,102 @@
 </section>
 
 
-<!-- ================= BERITA TERBARU ================= -->
-
-<section class="section">
+<!-- ================= ANGKATAN ================= -->
+<section class="section generation-section" id="angkatan">
 
     <div class="container">
 
         <div class="section-top">
 
             <div>
-
                 <span class="section-label">
-                    TERBARU
+                    03 — GENERASI
                 </span>
 
                 <h2>
-                    Berita Terbaru
+                    Angkatan & Generasi
                 </h2>
-
             </div>
 
-            <a href="berita.html" class="section-link">
-                Lihat Semua →
-            </a>
+            <p class="section-note">
+                Mereka yang pernah berjalan bersama.
+            </p>
 
         </div>
 
 
-        <div class="news-list">
+        <div class="generation-grid">
+
+            <a href="angkatan.html" class="generation-card featured">
+                <span class="card-number">01</span>
+                <span class="category">ANGKATAN</span>
+
+                <h3>
+                    Perjalanan
+                    Angkatan
+                </h3>
+
+                <p>
+                    Mengenal generasi dan cerita
+                    di balik setiap angkatan.
+                </p>
+
+                <span class="card-arrow">↗</span>
+            </a>
 
 
-            <article class="news-list-item">
+            <a href="kader-alumni.html" class="generation-card">
+                <span class="card-number">02</span>
+                <span class="category">KADER</span>
 
-                <div class="news-list-image">
-                    FOTO
-                </div>
+                <h3>
+                    Kader
+                    Hizbulloh
+                </h3>
 
-                <div class="news-list-content">
+                <p>
+                    Profil, cerita, karya, dan
+                    kontribusi kader.
+                </p>
 
-                    <span class="category">
-                        BERITA PMII
-                    </span>
-
-                    <h3>
-                        Pergerakan, Kaderisasi dan
-                        Pengabdian Kader PMII
-                    </h3>
-
-                    <p>
-                        Informasi mengenai aktivitas,
-                        kaderisasi, dan dinamika pergerakan.
-                    </p>
-
-                    <span class="article-meta">
-                        Hizbullah Media • 2026
-                    </span>
-
-                </div>
-
-            </article>
+                <span class="card-arrow">↗</span>
+            </a>
 
 
-            <article class="news-list-item">
+            <a href="kader-alumni.html" class="generation-card">
+                <span class="card-number">03</span>
+                <span class="category">ALUMNI</span>
 
-                <div class="news-list-image">
-                    FOTO
-                </div>
+                <h3>
+                    Jejaring
+                    Alumni
+                </h3>
 
-                <div class="news-list-content">
+                <p>
+                    Menyambungkan kembali
+                    orang-orang dalam perjalanan.
+                </p>
 
-                    <span class="category">
-                        KAMPUS
-                    </span>
-
-                    <h3>
-                        Aktivitas Mahasiswa dan
-                        Perkembangan Kampus
-                    </h3>
-
-                    <p>
-                        Informasi seputar kehidupan mahasiswa
-                        dan aktivitas kampus.
-                    </p>
-
-                    <span class="article-meta">
-                        Hizbullah Media • 2026
-                    </span>
-
-                </div>
-
-            </article>
+                <span class="card-arrow">↗</span>
+            </a>
 
 
-            <article class="news-list-item">
+            <a href="kader-alumni.html" class="generation-card">
+                <span class="card-number">04</span>
+                <span class="category">PENGGERAK</span>
 
-                <div class="news-list-image">
-                    FOTO
-                </div>
+                <h3>
+                    Tokoh &
+                    Penggerak
+                </h3>
 
-                <div class="news-list-content">
+                <p>
+                    Sosok yang memiliki cerita
+                    dan kontribusi penting.
+                </p>
 
-                    <span class="category">
-                        DAERAH
-                    </span>
-
-                    <h3>
-                        Peristiwa dan Informasi
-                        dari Daerah
-                    </h3>
-
-                    <p>
-                        Menghadirkan informasi dan peristiwa
-                        dari berbagai daerah.
-                    </p>
-
-                    <span class="article-meta">
-                        Hizbullah Media • 2026
-                    </span>
-
-                </div>
-
-            </article>
-
-
-            <article class="news-list-item">
-
-                <div class="news-list-image">
-                    FOTO
-                </div>
-
-                <div class="news-list-content">
-
-                    <span class="category">
-                        NASIONAL
-                    </span>
-
-                    <h3>
-                        Membaca Perkembangan
-                        Nasional
-                    </h3>
-
-                    <p>
-                        Informasi mengenai berbagai
-                        perkembangan nasional.
-                    </p>
-
-                    <span class="article-meta">
-                        Hizbullah Media • 2026
-                    </span>
-
-                </div>
-
-            </article>
+                <span class="card-arrow">↗</span>
+            </a>
 
         </div>
 
@@ -445,26 +453,23 @@
 
 
 <!-- ================= KARYA KADER ================= -->
-
-<section class="section section-light">
+<section class="section section-light" id="karya">
 
     <div class="container">
 
         <div class="section-top">
 
             <div>
-
                 <span class="section-label">
-                    KARYA KADER
+                    04 — KARYA
                 </span>
 
                 <h2>
-                    Ruang Karya
+                    Karya Kader
                 </h2>
-
             </div>
 
-            <a href="artikel.html" class="section-link">
+            <a href="karya.html" class="section-link">
                 Semua Karya →
             </a>
 
@@ -472,7 +477,6 @@
 
 
         <div class="content-grid three">
-
 
             <article class="content-card">
 
@@ -485,7 +489,8 @@
                 </span>
 
                 <h3>
-                    Gagasan dan Pemikiran Kader
+                    Gagasan dan
+                    Pemikiran Kader
                 </h3>
 
                 <p>
@@ -493,7 +498,7 @@
                     refleksi, dan pemikiran kader.
                 </p>
 
-                <a href="artikel.html">
+                <a href="karya.html">
                     Baca Karya →
                 </a>
 
@@ -507,19 +512,20 @@
                 </div>
 
                 <span class="category">
-                    ESAI
+                    ESAI & OPINI
                 </span>
 
                 <h3>
-                    Esai dan Catatan Pergerakan
+                    Catatan dan
+                    Perspektif
                 </h3>
 
                 <p>
-                    Catatan pengalaman, pembelajaran,
-                    dan perjalanan kader.
+                    Catatan pengalaman, pandangan,
+                    dan pembacaan kader.
                 </p>
 
-                <a href="artikel.html">
+                <a href="karya.html">
                     Baca Karya →
                 </a>
 
@@ -533,19 +539,20 @@
                 </div>
 
                 <span class="category">
-                    KARYA
+                    KARYA KREATIF
                 </span>
 
                 <h3>
-                    Karya Kreatif Kader
+                    Puisi, Desain,
+                    dan Karya Lainnya
                 </h3>
 
                 <p>
-                    Puisi, tulisan kreatif, desain,
-                    dan karya lainnya.
+                    Tempat menyimpan karya kreatif
+                    dari para kader.
                 </p>
 
-                <a href="artikel.html">
+                <a href="karya.html">
                     Lihat Karya →
                 </a>
 
@@ -558,145 +565,21 @@
 </section>
 
 
-<!-- ================= PENELITIAN ================= -->
-
-<section class="section">
-
-    <div class="container research-section">
-
-        <div class="research-intro">
-
-            <span class="section-label">
-                RISET & PENELITIAN
-            </span>
-
-            <h2>
-                Pengetahuan dari Kader
-            </h2>
-
-            <p>
-                Ruang dokumentasi hasil penelitian,
-                kajian, riset mahasiswa, dan karya
-                akademik yang dapat menjadi referensi
-                bagi kader dan masyarakat.
-            </p>
-
-            <a href="#" class="btn btn-primary">
-                Jelajahi Penelitian
-            </a>
-
-        </div>
-
-
-        <div class="research-list">
-
-            <article>
-                <span>01</span>
-
-                <div>
-                    <strong>
-                        Penelitian Mahasiswa
-                    </strong>
-
-                    <p>
-                        Hasil penelitian dan kajian kader.
-                    </p>
-                </div>
-            </article>
-
-
-            <article>
-                <span>02</span>
-
-                <div>
-                    <strong>
-                        Kajian Keislaman
-                    </strong>
-
-                    <p>
-                        Kajian dan pemikiran keislaman.
-                    </p>
-                </div>
-            </article>
-
-
-            <article>
-                <span>03</span>
-
-                <div>
-                    <strong>
-                        Kajian Sosial
-                    </strong>
-
-                    <p>
-                        Penelitian dan pembacaan persoalan sosial.
-                    </p>
-                </div>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= OPINI ================= -->
-
-<section class="section opinion-section">
-
-    <div class="container opinion-layout">
-
-        <div>
-
-            <span class="section-label">
-                OPINI
-            </span>
-
-            <h2>
-                Gagasan dan Perspektif
-            </h2>
-
-            <p>
-                Ruang untuk menyampaikan pandangan,
-                refleksi, dan gagasan mengenai keislaman,
-                kebangsaan, pendidikan, sosial,
-                dan pergerakan.
-            </p>
-
-            <a href="opini.html" class="btn btn-primary">
-                Baca Opini
-            </a>
-
-        </div>
-
-        <div class="opinion-mark">
-            “
-        </div>
-
-    </div>
-
-</section>
-
-
 <!-- ================= KEGIATAN ================= -->
-
-<section class="section section-light">
+<section class="section activity-section" id="kegiatan">
 
     <div class="container">
 
         <div class="section-top">
 
             <div>
-
                 <span class="section-label">
-                    KEGIATAN
+                    05 — KEGIATAN
                 </span>
 
                 <h2>
-                    Aktivitas Hizbullah
+                    Kegiatan & Perjumpaan
                 </h2>
-
             </div>
 
             <a href="kegiatan.html" class="section-link">
@@ -708,51 +591,101 @@
 
         <div class="activity-grid">
 
-
             <article class="activity-card">
 
-                <span>01</span>
+                <div class="activity-image">
+                    <span class="image-placeholder">
+                        FOTO KEGIATAN
+                    </span>
+                </div>
 
-                <h3>
-                    Kaderisasi
-                </h3>
+                <div class="activity-content">
 
-                <p>
-                    Dokumentasi proses kaderisasi
-                    dan pembelajaran.
-                </p>
+                    <span class="category">
+                        KADERISASI
+                    </span>
+
+                    <h3>
+                        Ruang belajar dan
+                        proses kaderisasi.
+                    </h3>
+
+                    <p>
+                        Dokumentasi proses belajar,
+                        pertemuan, dan kaderisasi.
+                    </p>
+
+                    <a href="kegiatan.html">
+                        Lihat Dokumentasi →
+                    </a>
+
+                </div>
 
             </article>
 
 
             <article class="activity-card">
 
-                <span>02</span>
+                <div class="activity-image">
+                    <span class="image-placeholder">
+                        FOTO KEGIATAN
+                    </span>
+                </div>
 
-                <h3>
-                    Pengabdian
-                </h3>
+                <div class="activity-content">
 
-                <p>
-                    Aktivitas sosial dan pengabdian
-                    kepada masyarakat.
-                </p>
+                    <span class="category">
+                        PERJUMPAAN
+                    </span>
+
+                    <h3>
+                        Menjaga silaturahmi
+                        lintas generasi.
+                    </h3>
+
+                    <p>
+                        Merekam pertemuan dan aktivitas
+                        bersama kader maupun alumni.
+                    </p>
+
+                    <a href="kegiatan.html">
+                        Lihat Dokumentasi →
+                    </a>
+
+                </div>
 
             </article>
 
 
             <article class="activity-card">
 
-                <span>03</span>
+                <div class="activity-image">
+                    <span class="image-placeholder">
+                        FOTO KEGIATAN
+                    </span>
+                </div>
 
-                <h3>
-                    Pergerakan
-                </h3>
+                <div class="activity-content">
 
-                <p>
-                    Aktivitas dan dinamika
-                    pergerakan kader.
-                </p>
+                    <span class="category">
+                        PENGABDIAN
+                    </span>
+
+                    <h3>
+                        Bergerak dan memberi
+                        manfaat.
+                    </h3>
+
+                    <p>
+                        Dokumentasi aktivitas sosial,
+                        pengabdian, dan kontribusi.
+                    </p>
+
+                    <a href="kegiatan.html">
+                        Lihat Dokumentasi →
+                    </a>
+
+                </div>
 
             </article>
 
@@ -763,28 +696,25 @@
 </section>
 
 
-<!-- ================= MULTIMEDIA ================= -->
-
-<section class="section multimedia-section">
+<!-- ================= GALERI ================= -->
+<section class="section dark-section gallery-section" id="galeri">
 
     <div class="container">
 
-        <div class="section-top">
+        <div class="section-top light">
 
             <div>
-
                 <span class="section-label">
-                    MULTIMEDIA
+                    06 — GALERI
                 </span>
 
                 <h2>
-                    Foto & Dokumentasi
+                    Potongan Perjalanan
                 </h2>
-
             </div>
 
-            <a href="galeri.html" class="section-link">
-                Lihat Galeri →
+            <a href="galeri.html" class="section-link light-link">
+                Buka Galeri →
             </a>
 
         </div>
@@ -792,21 +722,126 @@
 
         <div class="gallery-preview">
 
-            <div>
-                FOTO 01
-            </div>
+            <a href="galeri.html" class="gallery-item large">
+                <span>FOTO 01</span>
+            </a>
 
-            <div>
-                FOTO 02
-            </div>
+            <a href="galeri.html" class="gallery-item">
+                <span>FOTO 02</span>
+            </a>
 
-            <div>
-                FOTO 03
-            </div>
+            <a href="galeri.html" class="gallery-item">
+                <span>FOTO 03</span>
+            </a>
 
-            <div>
-                FOTO 04
-            </div>
+            <a href="galeri.html" class="gallery-item wide">
+                <span>FOTO 04</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RISET & ARSIP ================= -->
+<section class="section research-section" id="arsip">
+
+    <div class="container archive-layout">
+
+        <div class="archive-intro">
+
+            <span class="section-label">
+                07 — ARSIP & RISET
+            </span>
+
+            <h2>
+                Pengetahuan dan
+                ingatan yang dirawat.
+            </h2>
+
+            <p>
+                Arsip menjadi bagian penting dari Hizbulloh Media:
+                dokumen, foto, catatan, penelitian, dan berbagai
+                karya yang layak disimpan untuk dibaca kembali.
+            </p>
+
+            <a href="arsip.html" class="btn btn-primary">
+                Jelajahi Arsip
+            </a>
+
+        </div>
+
+
+        <div class="archive-list">
+
+            <a href="arsip.html">
+                <span>01</span>
+
+                <div>
+                    <strong>
+                        Dokumentasi Foto
+                    </strong>
+
+                    <p>
+                        Foto kegiatan dan perjalanan.
+                    </p>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a href="arsip.html">
+                <span>02</span>
+
+                <div>
+                    <strong>
+                        Dokumen & Catatan
+                    </strong>
+
+                    <p>
+                        Dokumen dan catatan penting.
+                    </p>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a href="arsip.html">
+                <span>03</span>
+
+                <div>
+                    <strong>
+                        Riset & Penelitian
+                    </strong>
+
+                    <p>
+                        Kajian dan penelitian kader.
+                    </p>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a href="arsip.html">
+                <span>04</span>
+
+                <div>
+                    <strong>
+                        Arsip Karya
+                    </strong>
+
+                    <p>
+                        Tulisan dan karya lintas generasi.
+                    </p>
+                </div>
+
+                <b>→</b>
+            </a>
 
         </div>
 
@@ -816,19 +851,18 @@
 
 
 <!-- ================= TENTANG ================= -->
-
-<section class="section about-section">
+<section class="section about-section" id="tentang">
 
     <div class="container about-layout">
 
         <div>
 
             <span class="section-label">
-                TENTANG
+                08 — TENTANG
             </span>
 
             <h2>
-                Hizbullah Media
+                Hizbulloh Media
             </h2>
 
         </div>
@@ -836,21 +870,22 @@
 
         <div>
 
-            <p>
-                <strong>Hizbullah Media</strong> merupakan
-                ruang informasi, publikasi, dokumentasi,
-                karya, dan gagasan PMII Angkatan Hizbullah.
+            <p class="about-lead">
+                <strong>Hizbulloh Media</strong> merupakan
+                ruang digital untuk menghimpun sejarah,
+                generasi, karya, kegiatan, dokumentasi,
+                dan arsip PMII Angkatan Hizbulloh.
             </p>
 
             <p>
-                Media ini dikembangkan sebagai ruang belajar
-                dan arsip digital agar karya kader,
-                penelitian, kegiatan, dan perjalanan
-                pergerakan dapat terdokumentasi dengan baik.
+                Website ini diposisikan sebagai rumah digital
+                dan portfolio dokumentasi. Fokus utamanya adalah
+                menjaga cerita tetap hidup, menghubungkan generasi,
+                serta memberi ruang bagi karya kader.
             </p>
 
             <a href="tentang.html" class="read-more">
-                Mengenal Hizbullah Media →
+                Mengenal Hizbulloh Media →
             </a>
 
         </div>
@@ -859,12 +894,10 @@
 
 </section>
 
-
 </main>
 
 
 <!-- ================= FOOTER ================= -->
-
 <footer class="site-footer">
 
     <div class="container footer-grid">
@@ -872,11 +905,16 @@
         <div>
 
             <div class="footer-brand">
-                HIZBULLAH MEDIA
+                HIZBULLOH MEDIA
             </div>
 
             <p>
-                Media Informasi & Pergerakan
+                Sejarah • Generasi • Karya • Pergerakan
+            </p>
+
+            <p class="footer-description">
+                Rumah digital untuk merawat perjalanan
+                Angkatan Hizbulloh.
             </p>
 
         </div>
@@ -885,24 +923,14 @@
         <div>
 
             <h3>
-                Navigasi
+                Jelajah
             </h3>
 
-            <a href="index.html">
-                Beranda
-            </a>
-
-            <a href="berita.html">
-                Berita
-            </a>
-
-            <a href="artikel.html">
-                Artikel
-            </a>
-
-            <a href="opini.html">
-                Opini
-            </a>
+            <a href="profil.html">Profil</a>
+            <a href="sejarah.html">Sejarah</a>
+            <a href="angkatan.html">Angkatan</a>
+            <a href="kader-alumni.html">Kader & Alumni</a>
+            <a href="karya.html">Karya</a>
 
         </div>
 
@@ -910,24 +938,13 @@
         <div>
 
             <h3>
-                Hizbullah
+                Dokumentasi
             </h3>
 
-            <a href="kegiatan.html">
-                Kegiatan
-            </a>
-
-            <a href="angkatan.html">
-                Angkatan
-            </a>
-
-            <a href="galeri.html">
-                Galeri
-            </a>
-
-            <a href="tentang.html">
-                Tentang Kami
-            </a>
+            <a href="kegiatan.html">Kegiatan</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="arsip.html">Arsip</a>
+            <a href="tentang.html">Tentang</a>
 
         </div>
 
@@ -939,12 +956,11 @@
         <div class="container">
 
             <p>
-                © 2026 Hizbullah Media.
-                Dilindungi Undang-Undang Hak Cipta.
+                © 2026 Hizbulloh Media.
             </p>
 
             <p>
-                PMII Angkatan Hizbullah
+                PMII Angkatan Hizbulloh
             </p>
 
         </div>
@@ -955,48 +971,51 @@
 
 
 <!-- ================= JAVASCRIPT ================= -->
-
 <script>
 
 const menuBtn = document.getElementById("menuBtn");
 const mainNav = document.getElementById("mainNav");
 
-menuBtn.addEventListener("click", function () {
+if (menuBtn && mainNav) {
 
-    mainNav.classList.toggle("active");
+    menuBtn.addEventListener("click", function () {
 
-    const isOpen =
-        mainNav.classList.contains("active");
+        mainNav.classList.toggle("active");
 
-    menuBtn.setAttribute(
-        "aria-expanded",
-        isOpen
-    );
+        const isOpen =
+            mainNav.classList.contains("active");
 
-    menuBtn.innerHTML =
-        isOpen ? "✕" : "☰";
+        menuBtn.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
 
-});
+        menuBtn.innerHTML =
+            isOpen ? "✕" : "☰";
+
+    });
 
 
-document
-    .querySelectorAll(".main-nav a")
-    .forEach(function(link) {
+    document
+        .querySelectorAll(".main-nav a")
+        .forEach(function(link) {
 
-        link.addEventListener("click", function() {
+            link.addEventListener("click", function() {
 
-            mainNav.classList.remove("active");
+                mainNav.classList.remove("active");
 
-            menuBtn.setAttribute(
-                "aria-expanded",
-                "false"
-            );
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
-            menuBtn.innerHTML = "☰";
+                menuBtn.innerHTML = "☰";
+
+            });
 
         });
 
-    });
+}
 
 </script>
 
