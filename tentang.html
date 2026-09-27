@@ -1,66 +1,521 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tentang Kami - Hizbullah Media</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="site-header">
-  <div class="container nav-wrapper">
-
-    <a href="index.html" class="brand">
-      <img src="hizbullah-media-logo-web.png"
-       alt="Logo PMII Angkatan Hizbullah"
-       class="brand-logo">
-
-      <span class="brand-main"></span>
-      <span class="brand-sub"></span>
-    </a>
-
-    <button class="menu-btn" aria-label="Buka menu">☰</button>
-
-    <nav class="main-nav" id="mainNav">
-            <a href="index.html">Beranda</a>
-            <a href="berita.html">Berita</a>
-            <a href="artikel.html">Artikel</a>
-            <a href="opini.html">Opini</a>
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="angkatan.html">Angkatan</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="tentang.html">Tentang</a>
-        </nav>
-
-
-  </div>
-</header>
-
-
-<section class="hero">
-  <div class="container hero-content">
-    <div class="hero-text">
-      <span class="eyebrow">TENTANG KAMI</span>
-      <h1>Hizbullah Media</h1>
-      <p>
-        Media Informasi & Pergerakan PMII Angkatan Hizbullah.
-      </p>
+<meta name="description"
+      content="Tentang Hizbullah Media - Media informasi, karya, penelitian, dan dokumentasi PMII Angkatan Hizbullah.">
+<title>Tentang | Hizbullah Media</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* =========================
+       TENTANG HIZBULLAH MEDIA
+    ========================= */
+      .about-hero {
+        min-height: 430px;
+        display: flex;
+        align-items: center;
+        background:
+            linear-gradient(135deg, #06183d 0%, #0b3d91 55%, #1769c2 100%);
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+    .about-hero::after {
+        content: "";
+        position: absolute;
+        width: 480px;
+        height: 480px;
+        right: -180px;
+        top: -180px;
+        border-radius: 50%;
+        border: 75px solid rgba(255,255,255,.05);
+    }
+    .about-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+    .about-hero-text {
+        max-width: 800px;
+    }
+    .about-hero h1 {
+        font-size: clamp(45px, 7vw, 82px);
+        line-height: 1;
+        font-weight: 900;
+        letter-spacing: -3px;
+        margin: 15px 0 25px;
+    }
+    .about-hero h1 span {
+        color: #f5c400;
+    }
+    .about-hero p {
+        max-width: 680px;
+        color: rgba(255,255,255,.85);
+        font-size: 18px;
+    }
+    /* =========================
+       TENTANG
+    ========================= */
+    .about-intro {
+        display: grid;
+        grid-template-columns: .9fr 1.1fr;
+        gap: 70px;
+        align-items: center;
+    }
+    .about-placeholder {
+        min-height: 360px;
+        border-radius: 16px;
+        background:
+            linear-gradient(135deg, #071d49, #1769c2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #f5c400;
+        font-weight: 900;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+    .about-copy p {
+        color: #667085;
+        margin-top: 18px;
+        font-size: 16px;
+    }
+    /* =========================
+       RUANG LINGKUP
+    ========================= */
+    .scope-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .scope-card {
+        padding: 30px 25px;
+        background: #ffffff;
+        border: 1px solid #e4e9f1;
+        border-radius: 14px;
+        transition: .3s;
+    }
+    .scope-card:hover {
+        transform: translateY(-6px);
+        border-color: #1769c2;
+        box-shadow: 0 15px 35px rgba(7,29,73,.08);
+    }
+    .scope-number {
+        color: #f5c400;
+        background: #071d49;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: 900;
+        font-size: 13px;
+    }
+    .scope-card h3 {
+        color: #071d49;
+        font-size: 21px;
+        margin: 18px 0 8px;
+    }
+    .scope-card p {
+        color: #667085;
+        font-size: 14px;
+    }
+    /* =========================
+       VISI
+    ========================= */
+    .vision-section {
+        background: #071d49;
+        color: #ffffff;
+    }
+    .vision-box {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+    }
+    .vision-box h2 {
+        color: #ffffff;
+        font-size: clamp(32px, 5vw, 52px);
+        margin: 10px 0 25px;
+    }
+    .vision-box p {
+        color: rgba(255,255,255,.75);
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    /* =========================
+       KONTRIBUSI
+    ========================= */
+    .contribution-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .contribution-card {
+        padding: 32px 26px;
+        background: #f4f7fb;
+        border-radius: 14px;
+        border-left: 5px solid #f5c400;
+    }
+    .contribution-card h3 {
+        color: #071d49;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .contribution-card p {
+        color: #667085;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .contribution-link {
+        color: #1769c2;
+        font-weight: 800;
+        font-size: 14px;
+    }
+    /* =========================
+       KEMITRAAN
+    ========================= */
+    .partnership {
+        background: #f4f7fb;
+    }
+    .partnership {
+        background: #f4f7fb;
+    }
+    .partnership-box {
+        max-width: 850px;
+        margin: auto;
+        text-align: center;
+    }
+    .partnership-box h2 {
+        color: #071d49;
+        font-size: clamp(30px, 4vw, 45px);
+        margin: 10px 0 18px;
+    }
+    .partnership-box p {
+        color: #667085;
+        margin-bottom: 25px;
+    }
+    /* =========================
+       RESPONSIVE
+    ========================= */
+    @media (max-width: 850px) {
+        .about-hero {
+            min-height: 420px;
+        }
+        .about-hero {
+            min-height: 420px;
+        }
+        .about-hero-content {
+            padding: 70px 16px;
+        }
+        .about-hero h1 {
+            font-size: 48px;
+            letter-spacing: -2px;
+        }
+        .about-hero p {
+            font-size: 16px;
+        }
+        .about-intro {
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
+        .about-placeholder {
+            min-height: 250px;
+        }
+        .scope-grid,
+        .contribution-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 550px) {
+        .about-hero h1 {
+            font-size: 42px;
+        }
+        .scope-grid,
+        .contribution-grid {
+            grid-template-columns: 1fr;
+        }
+        .about-placeholder {
+            min-height: 210px;
+        }
+    }
+</style>
+<div class="container about-hero-content">
+    <div class="about-hero-text">
+        <span class="eyebrow">
+            HIZBULLAH MEDIA
+        </span>
+        <h1>
+            TENTANG <span>KAMI</span>
+        </h1>
+        <p>
+            Ruang informasi, dokumentasi, pengetahuan,
+            dan karya dari PMII Angkatan Hizbullah.
+        </p>
     </div>
-  </div>
-</section>
+</div>
+<div class="container about-intro">
+    <div class="about-placeholder">
+        FOTO HIZBULLAH MEDIA
+    </div>
+    <div class="about-copy">
+        <span class="section-label">
+            TENTANG HIZBULLAH MEDIA
+        </span>
+        <h2>
+            Media yang Tumbuh Bersama Kader
+        </h2>
+        <p>
+            Hizbullah Media merupakan ruang informasi,
+            dokumentasi, dan publikasi yang dikembangkan
+            sebagai bagian dari perjalanan PMII Angkatan
+            Hizbullah.
+        </p>
+        <p>
+            Website ini menjadi tempat untuk menghimpun
+            berita, artikel, opini, karya kader, penelitian,
+            serta dokumentasi kegiatan yang dapat terus
+            berkembang dari waktu ke waktu.
+        </p>
+        <p>
+            Kami membangun media ini secara bertahap agar
+            setiap gagasan, pengalaman, pengetahuan, dan
+            karya dapat terdokumentasikan dengan baik.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="section-heading center">
+        <div>
+            <span class="section-label">
+                RUANG LINGKUP
+            </span>
+            <h2>
+                Apa yang Kami Hadirkan
+            </h2>
+        </div>
+    </div>
+    <div class="scope-grid">
+        <article class="scope-card">
+            <div class="scope-number">01</div>
+            <h3>Berita</h3>
+            <p>
+                Informasi dan peristiwa seputar PMII,
+                kampus, daerah, dan nasional.
+            </p>
+        </article>
+        <article class="scope-card">
+            <div class="scope-number">02</div>
+            <h3>Artikel</h3>
+            <p>
+                Tulisan yang membahas pengetahuan,
+                pengalaman, dan berbagai gagasan.
+            </p>
+        </article>
+        <article class="scope-card">
+            <div class="scope-number">03</div>
+            <h3>Opini</h3>
+            <p>
+                Ruang bagi kader untuk menyampaikan
+                pemikiran dan pandangan.
+            </p>
+        </article>
+        <article class="scope-card">
+            <div class="scope-number">04</div>
+            <h3>Penelitian</h3>
+            <p>
+                Tempat menghimpun hasil penelitian,
+                kajian, dan karya akademik.
+            </p>
+        </article>
+        <article class="scope-card">
+            <h3>Karya Kader</h3>
+            <p>
+                Wadah untuk tulisan, desain,
+                fotografi, puisi, dan karya kreatif.
+            </p>
+        </article>
+        <article class="scope-card">
+            <div class="scope-number">06</div>
+            <h3>Dokumentasi</h3>
+        </article>
+    </div>
+</div>
+<div class="container">
+    <div class="vision-box">
+        <span class="section-label light">
+            VISI
+        </span>
+        <h2>
+            Membangun Ruang untuk Gagasan,
+            Pengetahuan, dan Karya
+        </h2>
+        <p>
+            Menjadi ruang media yang mendokumentasikan,
+            menyebarkan, dan mengembangkan gagasan,
+            pengetahuan, serta karya kader secara
+            berkelanjutan.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="section-heading center">
+        <div>
+            <span class="section-label">
+                KONTRIBUSI
+            </span>
+            <h2>
+                Mari Berkontribusi
+            </h2>
+        </div>
+    </div>
+    <div class="contribution-grid">
+        <article class="contribution-card">
+            <h3>
+                Kirim Karya
+            </h3>
+            <p>
+                Ruang untuk mengirim tulisan,
+                desain, fotografi, puisi, dan
+                karya kreatif lainnya.
+            </p>
+            <a href="#" class="contribution-link">
+                Segera Hadir →
+            </a>
+        </article>
+        <article class="contribution-card">
+            <h3>
+                Kirim Penelitian
+            </h3>
+            <p>
+                Publikasikan hasil penelitian,
+                kajian, dan karya akademik
+                yang dapat bermanfaat bagi pembaca.
+            </p>
+            <a href="#" class="contribution-link">
+                Segera Hadir →
+            </a>
+        </article>
+        <article class="contribution-card">
+            <h3>
+                Berkolaborasi
+            </h3>
+            <p>
+                Terbuka untuk kolaborasi media,
+                komunitas, kampus, lembaga,
+                dan berbagai pihak.
+            </p>
+            <a href="#" class="contribution-link">
+                Hubungi Kami →
+            </a>
+        </article>
+    </div>
+</div>
+<div class="container">
+        <span class="section-label">
+            KEMITRAAN
+        </span>
+        <h2>
+            Bertumbuh Bersama
+        </h2>
+        <p>
+            Hizbullah Media akan terus dikembangkan
+            sebagai ruang publikasi dan kolaborasi
+            yang dapat mempertemukan karya, gagasan,
+            pengetahuan, dan berbagai bentuk kerja sama.
+        </p>
+        <a href="#" class="btn btn-primary">
+            Hubungi Kami
+        </a>
+    </div>
+</div>
+<div class="container footer-grid">
+    <div>
+        <div class="footer-brand">
+            HIZBULLAH MEDIA
+        </div>
+        <p>
+            Media Informasi & Pergerakan
+        </p>
+    </div>
+    <div>
+<h3>Navigasi</h3>
 
+        <a href="index.html">Beranda</a>
+        <a href="berita.html">Berita</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="opini.html">Opini</a>
 
-<section class="section">
-  <div class="container">
-
-    <div class="section-heading">
-      <span class="section-label">TENTANG HIZBULLAH MEDIA</span>
-      <h2>Media Informasi dan Pergerakan</h2>
     </div>
 
-    <div class="about-grid">
+    <div>
 
-      <div class="about-text">
-        <p
+        <h3>Hizbullah</h3>
+
+        <a href="kegiatan.html">Kegiatan</a>
+        <a href="angkatan.html">Angkatan</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="tentang.html">Tentang Kami</a>
+
+    </div>
+
+</div>
+
+<div class="container footer-bottom">
+
+    <p>
+        © 2026 Hizbullah Media.
+        Dilindungi Undang-Undang Hak Cipta.
+    </p>
+
+    <p>
+        PMII Angkatan Hizbullah
+    </p>
+  </div>
+</footer> <!-- ========================= MENU MOBILE ========================= --> <script>
+const menuBtn =
+document.getElementById("menuBtn");
+
+const mainNav =
+document.getElementById("mainNav");
+
+menuBtn.addEventListener("click", function () {
+  mainNav.classList.toggle("active");
+
+const isOpen =
+    mainNav.classList.contains("active");
+
+menuBtn.setAttribute(
+    "aria-expanded",
+    isOpen
+);
+
+menuBtn.setAttribute(
+    "aria-label",
+    isOpen ? "Tutup menu" : "Buka menu"
+);
+
+menuBtn.innerHTML =
+    isOpen ? "✕" : "☰";
+
+});
+
+document
+.querySelectorAll(".main-nav a")
+.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        mainNav.classList.remove("active");
+
+        menuBtn.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuBtn.setAttribute(
+            "aria-label",
+            "Buka menu"
+        );
+
+        menuBtn.innerHTML = "☰";
+
+    });
+
+});
