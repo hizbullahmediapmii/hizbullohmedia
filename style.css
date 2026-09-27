@@ -966,3 +966,57 @@ section {
     max-width: 100%;
   }
     }
+/* ===== FIX MENU HP ===== */
+
+.menu-btn {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  font-size: 28px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* LAPTOP */
+@media (min-width: 851px) {
+  .menu-btn {
+    display: none !important;
+  }
+
+  .main-nav {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/* HP */
+@media (max-width: 850px) {
+  .menu-btn {
+    display: block !important;
+  }
+
+  .main-nav {
+    display: none !important;
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  .main-nav.active {
+    display: flex !important;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-header,
+  .nav-wrapper,
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
