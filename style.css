@@ -1354,3 +1354,147 @@ button:focus-visible {
 
     outline-offset: 3px;
 }
+   /* =========================================
+   HEADER HALAMAN TENTANG
+   ========================================= */
+
+.about-hero {
+    min-height: 360px;
+    padding: 80px 0;
+}
+
+.about-hero .hero-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.about-hero .hero-text {
+    max-width: 720px;
+}
+
+.about-hero .eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+}
+
+.about-hero h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   LAPTOP
+   ========================================= */
+
+@media (min-width: 851px) {
+
+    .about-hero {
+        min-height: 380px;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .about-hero {
+        min-height: 330px;
+        padding: 65px 0;
+    }
+
+    .about-hero .hero-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .about-hero h1 {
+        font-size: 48px;
+        letter-spacing: -1.5px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================
+   HP
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 300px;
+        padding: 55px 0;
+    }
+
+    .about-hero .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-hero .hero-text {
+        max-width: 100%;
+    }
+
+    .about-hero .eyebrow {
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+        line-height: 1.05;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+}
+
+
+/* =========================================
+   HP KECIL
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .about-hero {
+        min-height: 280px;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-hero p {
+        font-size: 14px;
+    }
+
+}
+
