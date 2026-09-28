@@ -1004,7 +1004,253 @@ a {
     .news-content h3 {
         font-size: 20px;
     }
+/* =====================================================
+   HIZBULLAH MEDIA - PROFESSIONAL MEDIA OVERRIDE
+   ===================================================== */
 
+:root {
+    --hm-blue: #071d49;
+    --hm-blue-2: #0b2f68;
+    --hm-blue-3: #124a91;
+    --hm-gold: #d6a84f;
+    --hm-white: #ffffff;
+    --hm-light: #f4f7fb;
+    --hm-text: #172033;
+    --hm-muted: #687386;
+}
+
+/* BODY */
+body {
+    background: #f5f7fb;
+    color: var(--hm-text);
+}
+
+/* HEADER */
+.site-header {
+    background: linear-gradient(135deg, #061638, #0b2f68) !important;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 4px 20px rgba(3,18,45,.18);
+}
+
+/* AREA HEADER */
+.nav-wrapper {
+    min-height: 76px;
+}
+
+/* LOGO */
+.brand-logo {
+    object-fit: contain;
+    transition: transform .25s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.03);
+}
+
+/* MENU DESKTOP */
+.main-nav {
+    gap: 5px;
+}
+
+.main-nav a {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 13px;
+    border-radius: 7px;
+    transition: all .25s ease;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,.12);
+    color: #ffffff !important;
+}
+
+.main-nav a.active {
+    background: #ffffff;
+    color: var(--hm-blue) !important;
+}
+
+/* TOMBOL MENU HP */
+.menu-btn {
+    border: 1px solid rgba(255,255,255,.25);
+    background: rgba(255,255,255,.08);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 9px 11px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background:
+        linear-gradient(135deg, rgba(7,29,73,.97), rgba(18,74,145,.90));
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    color: rgba(255,255,255,.86);
+}
+
+/* SEMUA TOMBOL */
+.btn {
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all .25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* SECTION */
+section {
+    scroll-margin-top: 90px;
+}
+
+.section-heading h2 {
+    color: var(--hm-blue);
+    font-weight: 800;
+}
+
+/* KARTU MEDIA */
+.news-card,
+.article-card,
+.activity-card,
+.gallery-card,
+.opinion-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e7ebf2;
+    box-shadow: 0 5px 20px rgba(20,35,60,.07);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.news-card:hover,
+.article-card:hover,
+.activity-card:hover,
+.gallery-card:hover,
+.opinion-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(20,35,60,.12);
+}
+
+/* GAMBAR KARTU */
+.news-card img,
+.article-card img,
+.activity-card img,
+.gallery-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* TEKS KARTU */
+.news-card h3,
+.article-card h3,
+.activity-card h3 {
+    color: var(--hm-blue);
+}
+
+/* LINK BACA */
+.news-card a,
+.article-card a,
+.activity-card a {
+    font-weight: 700;
+    color: var(--hm-blue-3);
+}
+
+.news-card a:hover,
+.article-card a:hover,
+.activity-card a:hover {
+    color: var(--hm-gold);
+}
+
+/* FOOTER */
+footer {
+    background: #061638 !important;
+    color: rgba(255,255,255,.82);
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: var(--hm-gold);
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .nav-wrapper {
+        min-height: 68px;
+    }
+
+    .main-nav {
+        background: #071d49 !important;
+        border-top: 1px solid rgba(255,255,255,.10);
+        box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    }
+
+    .main-nav a {
+        width: 100%;
+        padding: 13px 16px;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .main-nav a.active {
+        background: rgba(255,255,255,.12);
+        color: #ffffff !important;
+    }
+
+    .hero {
+        min-height: 470px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .news-card,
+    .article-card,
+    .activity-card,
+    .gallery-card,
+    .opinion-card {
+        border-radius: 10px;
+    }
+}
+
+/* HP KECIL */
+@media (max-width: 480px) {
+
+    .brand-logo {
+        width: 115px;
+        height: 50px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+}
     .footer-grid {
         grid-template-columns: 1fr;
     }
