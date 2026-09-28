@@ -66,12 +66,6 @@ a {
 }
 
 /* LOGO */
-<a href="style.css" class="brand">
-
-    <img src="hizbullah-media-logo-web.png"
-         alt="Logo PMII Angkatan Hizbullah"
-         class="brand-logo">
-
 </a>
 .brand {
     display: flex;
