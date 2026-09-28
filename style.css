@@ -1259,3 +1259,115 @@ footer a:hover {
         padding: 18px 10px;
     }
 }
+       /* =====================================================
+   PENDIRI HIZBULLAH MEDIA
+   ===================================================== */
+
+.founder-section {
+    padding: 80px 0;
+    background: #f5f7fb;
+}
+
+.founder-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 950px;
+    margin: 35px auto 0;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e5e9f0;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(7,29,73,.08);
+}
+
+.founder-photo {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #e9eef6;
+}
+
+.founder-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.founder-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #124a91;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.founder-info h3 {
+    margin: 0 0 15px;
+    color: #071d49;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.founder-info p {
+    color: #687386;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.founder-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.founder-meta div {
+    min-width: 150px;
+    padding: 14px 16px;
+    background: #f5f7fb;
+    border-radius: 10px;
+}
+
+.founder-meta strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #071d49;
+    font-size: 13px;
+}
+
+.founder-meta span {
+    color: #687386;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .founder-card {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 22px;
+    }
+
+    .founder-photo {
+        height: 300px;
+    }
+
+    .founder-info h3 {
+        font-size: 25px;
+    }
+
+    .founder-meta {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .founder-meta div {
+        width: auto;
+    }
+}
+  
