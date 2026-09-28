@@ -75,9 +75,10 @@ a {
 }
 
 .brand-logo {
-    width: 150px;
-    height: 62px;
+    width: 200px;
+    height: 82px;
     object-fit: contain;
+}
 }
 
 .brand-main,
