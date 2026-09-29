@@ -1,68 +1,131 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hizbullah Media | Media Informasi & Pergerakan</title>
+  <title>HB MEDIA | Media Informasi & Pergerakan</title>
 
-    <meta name="description" content="Hizbullah Media - Media Informasi & Pergerakan PMII Angkatan Hizbullah.">
-    <meta name="keywords" content="Hizbullah Media, PMII, Angkatan Hizbullah, berita, artikel, opini, kegiatan">
-    <meta name="author" content="Hizbullah Media">
+  <meta name="description" content="HB MEDIA - ruang informasi, gagasan, dokumentasi, dan perjalanan PMII Angkatan Hizbullah.">
+  <meta name="author" content="HB MEDIA">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="topbar">
+  <div class="container topbar-inner">
+
+    <div class="topbar-text">
+      <span class="gold-line"></span>
+
+      <span>
+        Ruang informasi, gagasan, dokumentasi,<br>
+        dan perjalanan PMII Angkatan Hizbullah.
+      </span>
+    </div>
+
+    <div class="social-mini">
+      <a href="#" aria-label="YouTube">▶</a>
+      <a href="#" aria-label="Instagram">◎</a>
+      <a href="#" aria-label="TikTok">♪</a>
+      <a href="#" aria-label="X">𝕏</a>
+    </div>
+
+  </div>
+</div>
+
 
 <!-- ================= HEADER ================= -->
 
 <header class="site-header">
 
-    <div class="container nav-wrapper">
+  <div class="container nav-wrapper">
 
-        <a href="index.html" class="brand">
+    <!-- LOGO -->
+    <a href="index.html" class="brand">
 
-            <img
-                src="hizbullah-media-logo-web.png"
-                alt="Logo Hizbullah Media"
-                class="brand-logo"
-            >
+      <img
+        src="hizbullah-media-logo-web.png"
+        alt="Logo HB MEDIA"
+        class="brand-logo"
+      >
 
-</a>
-            <div>
-                <span class="brand-main"></span>
-                <span class="brand-sub"></span>
-            </div>
+    </a>
 
-        </a>
 
-        <!-- TOMBOL MENU HP -->
-        <button
-            class="menu-btn"
-            id="menuBtn"
-            type="button"
-            aria-label="Buka menu"
-            aria-expanded="false"
-        >
-            ☰
-        </button>
+    <!-- MENU HP -->
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      type="button"
+      aria-label="Buka menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
 
-        <!-- NAVIGASI -->
-        <nav class="main-nav" id="mainNav">
 
-            <a href="index.html">Beranda</a>
-            <a href="berita.html">Berita</a>
-            <a href="artikel.html">Artikel</a>
-            <a href="opini.html">Opini</a>
-            <a href="kegiatan.html">Kegiatan</a>
-            <a href="angkatan.html">Angkatan</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="tentang.html">Tentang</a>
+    <!-- MENU LAPTOP -->
+    <nav class="main-nav" id="mainNav">
 
-        </nav>
+      <a class="active" href="index.html">Beranda</a>
+
+      <a href="berita.html">Berita</a>
+
+      <a href="artikel.html">Artikel</a>
+
+      <a href="opini.html">Opini</a>
+
+      <a href="kegiatan.html">Kegiatan</a>
+
+      <a href="angkatan.html">Angkatan</a>
+
+      <a href="galeri.html">Galeri</a>
+
+      <a href="tentang.html">Tentang</a>
+
+    </nav>
+
+
+    <!-- PENCARIAN LAPTOP -->
+    <button
+      class="search-btn"
+      id="searchBtn"
+      type="button"
+      aria-label="Buka pencarian"
+    >
+      ⌕
+    </button>
+
+  </div>
+
+
+  <!-- PANEL PENCARIAN -->
+  <div class="search-panel" id="searchPanel">
+
+    <div class="container search-inner">
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Cari berita, artikel, opini..."
+        aria-label="Cari"
+      >
+
+      <button
+        type="button"
+        id="searchClose"
+      >
+        Tutup
+      </button>
 
     </div>
+
+  </div>
 
 </header>
 
@@ -76,322 +139,478 @@
 
 <section class="hero" id="beranda">
 
-    <div class="container hero-content">
+  <div class="hero-bg"></div>
 
-        <div class="hero-text">
+  <div class="container hero-inner">
 
-            <span class="eyebrow">
-                 &amp; 
-            </span>
+    <div class="hero-brand">
 
-            <h1)>
-                </a>
-                <span></span>
-            </h1>
+      <img
+        src="hizbullah-media-logo-web.png"
+        alt="HB MEDIA"
+        class="hero-logo"
+      >
 
-            <p>
-                
-            </p>
+      <div class="hero-copy">
 
-            <div class="hero-actions">
+        <span class="hero-kicker">
+          MEDIA INFORMASI & PERGERAKAN
+        </span>
 
-                <a href="berita.html" class="btn btn-primary">
-                    Baca Berita
-                </a>
+        <h1>
+          HB MEDIA
+        </h1>
 
-                <a href="tentang.html" class="btn btn-outline">
-                    Tentang Kami
-                </a>
+        <p>
+          Ruang informasi, gagasan, dokumentasi,
+          <br>
+          dan perjalanan PMII Angkatan Hizbullah.
+        </p>
 
-            </div>
-
-        </div>
+      </div>
 
     </div>
+
+
+    <!-- TEMPAT FOTO HERO -->
+
+    <div class="hero-photo-slot">
+
+      <img
+        src="gambar/hero.jpg"
+        alt="Foto utama HB MEDIA"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+      >
+
+      <div class="photo-placeholder">
+
+        <strong>
+          FOTO HERO
+        </strong>
+
+        <span>
+          Upload: gambar/hero.jpg
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- DOT SLIDER -->
+
+    <div class="hero-dots">
+
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- ================= TENTANG SINGKAT ================= -->
+<!-- ================= QUICK MENU ================= -->
 
-<section class="section">
+<section class="quick-links">
 
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div>
-
-                <span class="section-label">
-                    HIZBULLAH MEDIA
-                </span>
-
-                <h2>
-                    Media Informasi &amp; Pergerakan
-                </h2>
-
-            </div>
-
-        </div>
+  <div class="container quick-grid">
 
 
-        <div class="about-intro">
+    <a href="berita.html" class="quick-item">
 
-            <p>
-                Hizbullah Media hadir sebagai ruang publikasi
-                untuk menyampaikan informasi, gagasan, aktivitas,
-                serta dokumentasi PMII Angkatan Hizbullah kepada
-                masyarakat.
-            </p>
+      <span class="quick-icon">
+        ▤
+      </span>
 
-            <a href="tentang.html" class="read-more">
-                Selengkapnya →
-            </a>
+      <strong>
+        Berita
+      </strong>
 
-        </div>
+      <small>
+        Aktual & Terpercaya
+      </small>
 
-    </div>
+    </a>
+
+
+    <a href="artikel.html" class="quick-item">
+
+      <span class="quick-icon">
+        ▥
+      </span>
+
+      <strong>
+        Artikel
+      </strong>
+
+      <small>
+        Gagasan & Analisis
+      </small>
+
+    </a>
+
+
+    <a href="galeri.html" class="quick-item">
+
+      <span class="quick-icon">
+        ♟
+      </span>
+
+      <strong>
+        Dokumentasi
+      </strong>
+
+      <small>
+        Jejak Pergerakan
+      </small>
+
+    </a>
+
+
+    <a href="angkatan.html" class="quick-item">
+
+      <span class="quick-icon">
+        ✦
+      </span>
+
+      <strong>
+        PMII
+      </strong>
+
+      <small>
+        Angkatan Hizbullah
+      </small>
+
+    </a>
+
+
+  </div>
 
 </section>
 
 
 <!-- ================= BERITA TERBARU ================= -->
 
-<section class="section">
+<section class="section latest-section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-heading">
+    <div class="section-heading">
 
-            <div>
+      <div>
 
-                <span class="section-label">
-                    TERKINI
-                </span>
+        <span class="section-label">
+          TERKINI
+        </span>
 
-                <h2>
-                    Berita Terbaru
-                </h2>
+        <h2>
+          Berita Terbaru
+        </h2>
 
-            </div>
+        <span class="gold-under"></span>
 
-            <a href="berita.html" class="view-all">
-                Lihat Semua →
-            </a>
-
-        </div>
+      </div>
 
 
-        <div class="news-grid">
-
-
-            <!-- BERITA 1 -->
-
-            <article class="news-card">
-
-                <div class="news-image">
-                    <span>
-                        HIZBULLAH MEDIA
-                    </span>
-                </div>
-
-                <div class="news-content">
-
-                    <span class="category">
-                        HIZBULLAH MEDIA
-                    </span>
-
-                    <h3>
-                        Selamat Datang di Hizbullah Media
-                    </h3>
-
-                    <p>
-                        Hizbullah Media menjadi ruang informasi,
-                        publikasi, gagasan, dan dokumentasi
-                        PMII Angkatan Hizbullah.
-                    </p>
-
-                    <a href="artikel-1.html" class="read-more">
-                        Baca selengkapnya →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- BERITA 2 -->
-
-            <article class="news-card">
-
-                <div class="news-image">
-                    <span>
-                        PMII
-                    </span>
-                </div>
-
-                <div class="news-content">
-
-                    <span class="category">
-                        BERITA PMII
-                    </span>
-
-                    <h3>
-                        Pergerakan, Kaderisasi dan Pengabdian
-                    </h3>
-
-                    <p>
-                        Informasi mengenai aktivitas dan dinamika
-                        pergerakan kader PMII.
-                    </p>
-
-                    <a href="artikel-1.html" class="read-more">
-                        Baca selengkapnya →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- BERITA 3 -->
-
-            <article class="news-card">
-
-                <div class="news-image">
-                    <span>
-                        KEGIATAN
-                    </span>
-                </div>
-
-                <div class="news-content">
-
-                    <span class="category">
-                        KEGIATAN
-                    </span>
-
-                    <h3>
-                        Kegiatan Angkatan Hizbullah
-                    </h3>
-
-                    <p>
-                        Dokumentasi kegiatan, kaderisasi,
-                        pengabdian, dan pergerakan Angkatan Hizbullah.
-                    </p>
-
-                    <a href="kegiatan.html" class="read-more">
-                        Baca selengkapnya →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
+      <a href="berita.html" class="view-all">
+        Lihat Semua <b>→</b>
+      </a>
 
     </div>
+
+
+    <div class="latest-list">
+
+
+      <!-- BERITA 1 -->
+
+      <article class="latest-card">
+
+        <div class="latest-image">
+
+          <img
+            src="gambar/berita-1.jpg"
+            alt="Berita 1"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <span>
+            FOTO<br>
+            BERITA 01
+          </span>
+
+        </div>
+
+
+        <div class="latest-content">
+
+          <span class="news-tag">
+            Berita
+          </span>
+
+          <h3>
+            PMII Angkatan Hizbullah Gelar Pengkaderan, Perkuat Idealisme
+          </h3>
+
+          <div class="meta">
+            <span>▣</span>
+            24 Sep 2025
+
+            <span>▤</span>
+            3 Menit Baca
+          </div>
+
+        </div>
+
+
+        <a
+          href="berita.html"
+          class="arrow-link"
+        >
+          →
+        </a>
+
+      </article>
+
+
+      <!-- BERITA 2 -->
+
+      <article class="latest-card">
+
+        <div class="latest-image">
+
+          <img
+            src="gambar/berita-2.jpg"
+            alt="Berita 2"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <span>
+            FOTO<br>
+            BERITA 02
+          </span>
+
+        </div>
+
+
+        <div class="latest-content">
+
+          <span class="news-tag">
+            Berita
+          </span>
+
+          <h3>
+            Kolaborasi dan Pergerakan, Hizbullah Media Hadir di Tengah Masyarakat
+          </h3>
+
+          <div class="meta">
+            <span>▣</span>
+            22 Sep 2025
+
+            <span>▤</span>
+            4 Menit Baca
+          </div>
+
+        </div>
+
+
+        <a
+          href="berita.html"
+          class="arrow-link"
+        >
+          →
+        </a>
+
+      </article>
+
+
+      <!-- BERITA 3 -->
+
+      <article class="latest-card">
+
+        <div class="latest-image">
+
+          <img
+            src="gambar/berita-3.jpg"
+            alt="Berita 3"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          <span>
+            FOTO<br>
+            BERITA 03
+          </span>
+
+        </div>
+
+
+        <div class="latest-content">
+
+          <span class="news-tag">
+            Berita
+          </span>
+
+          <h3>
+            PMII: Menjaga Tradisi, Merawat Pergerakan di Tengah Zaman
+          </h3>
+
+          <div class="meta">
+            <span>▣</span>
+            20 Sep 2025
+
+            <span>▤</span>
+            5 Menit Baca
+          </div>
+
+        </div>
+
+
+        <a
+          href="berita.html"
+          class="arrow-link"
+        >
+          →
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- ================= JELAJAHI BERITA ================= -->
+<!-- ================= TENTANG ================= -->
 
-<section class="section section-white">
+<section class="section intro-section">
 
-    <div class="container">
+  <div class="container intro-grid">
 
-        <div class="section-heading center">
+    <div>
 
-            <div>
+      <span class="section-label">
+        TENTANG KAMI
+      </span>
 
-                <span class="section-label">
-                    KATEGORI
-                </span>
-
-                <h2>
-                    Jelajahi Berita
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="category-grid">
-
-
-            <!-- 01 -->
-
-            <a href="berita.html" class="category-box">
-
-                <span>01</span>
-
-                <h3>
-                    Berita PMII
-                </h3>
-
-                <p>
-                    Informasi dan perkembangan organisasi PMII.
-                </p>
-
-            </a>
-
-
-            <!-- 02 -->
-
-            <a href="berita.html" class="category-box">
-
-                <span>02</span>
-
-                <h3>
-                    Berita Kampus
-                </h3>
-
-                <p>
-                    Informasi seputar kehidupan mahasiswa.
-                </p>
-
-            </a>
-
-
-            <!-- 03 -->
-
-            <a href="berita.html" class="category-box">
-
-                <span>03</span>
-
-                <h3>
-                    Berita Daerah
-                </h3>
-
-                <p>
-                    Informasi dan peristiwa dari daerah.
-                </p>
-
-            </a>
-
-
-            <!-- 04 -->
-
-            <a href="berita.html" class="category-box">
-
-                <span>04</span>
-
-                <h3>
-                    Berita Nasional
-                </h3>
-
-                <p>
-                    Membaca berbagai perkembangan nasional.
-                </p>
-
-            </a>
-
-
-        </div>
+      <h2>
+        Media yang tumbuh dari gagasan dan pergerakan.
+      </h2>
 
     </div>
+
+
+    <div class="intro-text">
+
+      <p>
+        HB MEDIA hadir sebagai ruang publikasi untuk menyampaikan
+        informasi, gagasan, aktivitas, serta dokumentasi
+        PMII Angkatan Hizbullah kepada masyarakat.
+      </p>
+
+      <a href="tentang.html" class="read-more">
+        Selengkapnya →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= KATEGORI ================= -->
+
+<section class="section category-section">
+
+  <div class="container">
+
+    <div class="section-heading center">
+
+      <div>
+
+        <span class="section-label">
+          KATEGORI
+        </span>
+
+        <h2>
+          Jelajahi HB MEDIA
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="category-grid">
+
+      <a href="berita.html">
+
+        <span>01</span>
+
+        <h3>
+          Berita
+        </h3>
+
+        <p>
+          Informasi aktual dan perkembangan terbaru.
+        </p>
+
+      </a>
+
+
+      <a href="artikel.html">
+
+        <span>02</span>
+
+        <h3>
+          Artikel
+        </h3>
+
+        <p>
+          Gagasan, analisis, keislaman dan kebangsaan.
+        </p>
+
+      </a>
+
+
+      <a href="opini.html">
+
+        <span>03</span>
+
+        <h3>
+          Opini
+        </h3>
+
+        <p>
+          Ruang suara dan pandangan penulis.
+        </p>
+
+      </a>
+
+
+      <a href="kegiatan.html">
+
+        <span>04</span>
+
+        <h3>
+          Kegiatan
+        </h3>
+
+        <p>
+          Aktivitas dan jejak pergerakan.
+        </p>
+
+      </a>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -400,204 +619,204 @@
 
 <section class="section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-heading">
+    <div class="section-heading">
 
-            <div>
+      <div>
 
-                <span class="section-label">
-                    WAWASAN
-                </span>
+        <span class="section-label">
+          WAWASAN
+        </span>
 
-                <h2>
-                    Artikel
-                </h2>
+        <h2>
+          Artikel
+        </h2>
 
-            </div>
+      </div>
 
-            <a href="artikel.html" class="view-all">
-                Lihat Semua →
-            </a>
-
-        </div>
-
-
-        <div class="simple-grid">
-
-
-            <article class="simple-card">
-
-                <span class="category">
-                    KEISLAMAN
-                </span>
-
-                <h3>
-                    Islam dan Kehidupan Kader
-                </h3>
-
-                <p>
-                    Ruang refleksi dan gagasan mengenai
-                    keislaman dalam kehidupan kader.
-                </p>
-
-                <a href="artikel-keislaman.html" class="read-more">
-                    Baca artikel →
-                </a>
-
-            </article>
-
-
-            <article class="simple-card">
-
-                <span class="category">
-                    KEBANGSAAN
-                </span>
-
-                <h3>
-                    Pemuda dan Masa Depan Bangsa
-                </h3>
-
-                <p>
-                    Membaca peran mahasiswa dan pemuda
-                    dalam kehidupan kebangsaan.
-                </p>
-
-                <a href="artikel-kebangsaan.html" class="read-more">
-                    Baca artikel →
-                </a>
-
-            </article>
-
-
-            <article class="simple-card">
-
-                <span class="category">
-                    PENDIDIKAN
-                </span>
-
-                <h3>
-                    Pendidikan dan Pergerakan
-                </h3>
-
-                <p>
-                    Pendidikan sebagai bagian penting
-                    dalam membangun generasi.
-                </p>
-
-                <a href="artikel-pendidikan.html" class="read-more">
-                    Baca artikel →
-                </a>
-
-            </article>
-
-
-        </div>
+      <a href="artikel.html" class="view-all">
+        Lihat Semua →
+      </a>
 
     </div>
+
+
+    <div class="simple-grid">
+
+
+      <article class="simple-card">
+
+        <span class="category">
+          KEISLAMAN
+        </span>
+
+        <h3>
+          Islam dan Kehidupan Kader
+        </h3>
+
+        <p>
+          Ruang refleksi dan gagasan mengenai keislaman
+          dalam kehidupan kader.
+        </p>
+
+        <a href="artikel-keislaman.html">
+          Baca artikel →
+        </a>
+
+      </article>
+
+
+      <article class="simple-card">
+
+        <span class="category">
+          KEBANGSAAN
+        </span>
+
+        <h3>
+          Pemuda dan Masa Depan Bangsa
+        </h3>
+
+        <p>
+          Membaca peran mahasiswa dan pemuda
+          dalam kehidupan kebangsaan.
+        </p>
+
+        <a href="artikel-kebangsaan.html">
+          Baca artikel →
+        </a>
+
+      </article>
+
+
+      <article class="simple-card">
+
+        <span class="category">
+          PENDIDIKAN
+        </span>
+
+        <h3>
+          Pendidikan dan Pergerakan
+        </h3>
+
+        <p>
+          Pendidikan sebagai bagian penting
+          dalam membangun generasi.
+        </p>
+
+        <a href="artikel-pendidikan.html">
+          Baca artikel →
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
 
 </section>
 
 
 <!-- ================= OPINI ================= -->
 
-<section class="section section-soft">
+<section class="section soft-section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-heading">
+    <div class="section-heading">
 
-            <div>
+      <div>
 
-                <span class="section-label">
-                    GAGASAN
-                </span>
+        <span class="section-label">
+          GAGASAN
+        </span>
 
-                <h2>
-                    Opini
-                </h2>
+        <h2>
+          Opini
+        </h2>
 
-            </div>
+      </div>
 
-            <a href="opini.html" class="view-all">
-                Lihat Semua →
-            </a>
-
-        </div>
-
-
-        <div class="simple-grid">
-
-
-            <article class="simple-card">
-
-                <span class="category">
-                    OPINI
-                </span>
-
-                <h3>
-                    Suara Kader dan Realitas Pergerakan
-                </h3>
-
-                <p>
-                    Gagasan dan pandangan tentang dinamika
-                    pergerakan mahasiswa.
-                </p>
-
-                <a href="opini-1.html" class="read-more">
-                    Baca opini →
-                </a>
-
-            </article>
-
-
-            <article class="simple-card">
-
-                <span class="category">
-                    OPINI
-                </span>
-
-                <h3>
-                    Solidaritas dalam Pergerakan
-                </h3>
-
-                <p>
-                    Catatan mengenai solidaritas dan kebersamaan
-                    dalam organisasi.
-                </p>
-
-                <a href="opini-2.html" class="read-more">
-                    Baca opini →
-                </a>
-
-            </article>
-
-
-            <article class="simple-card">
-
-                <span class="category">
-                    OPINI
-                </span>
-
-                <h3>
-                    Kembali kepada Khittah Pergerakan
-                </h3>
-
-                <p>
-                    Refleksi tentang nilai dan arah pergerakan
-                    kader PMII.
-                </p>
-
-                <a href="opini-3.html" class="read-more">
-                    Baca opini →
-                </a>
-
-            </article>
-
-
-        </div>
+      <a href="opini.html" class="view-all">
+        Lihat Semua →
+      </a>
 
     </div>
+
+
+    <div class="simple-grid">
+
+
+      <article class="simple-card">
+
+        <span class="category">
+          OPINI
+        </span>
+
+        <h3>
+          Suara Kader dan Realitas Pergerakan
+        </h3>
+
+        <p>
+          Gagasan dan pandangan tentang dinamika
+          pergerakan mahasiswa.
+        </p>
+
+        <a href="opini-1.html">
+          Baca opini →
+        </a>
+
+      </article>
+
+
+      <article class="simple-card">
+
+        <span class="category">
+          OPINI
+        </span>
+
+        <h3>
+          Solidaritas dalam Pergerakan
+        </h3>
+
+        <p>
+          Catatan mengenai solidaritas dan kebersamaan
+          dalam organisasi.
+        </p>
+
+        <a href="opini-2.html">
+          Baca opini →
+        </a>
+
+      </article>
+
+
+      <article class="simple-card">
+
+        <span class="category">
+          OPINI
+        </span>
+
+        <h3>
+          Kembali kepada Khittah Pergerakan
+        </h3>
+
+        <p>
+          Refleksi tentang nilai dan arah pergerakan
+          kader PMII.
+        </p>
+
+        <a href="opini-3.html">
+          Baca opini →
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -606,181 +825,174 @@
 
 <section class="section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-heading">
+    <div class="section-heading">
 
-            <div>
+      <div>
 
-                <span class="section-label">
-                    AKTIVITAS
-                </span>
+        <span class="section-label">
+          AKTIVITAS
+        </span>
 
-                <h2>
-                    Kegiatan Hizbullah
-                </h2>
+        <h2>
+          Kegiatan HB MEDIA
+        </h2>
 
-            </div>
+      </div>
 
-            <a href="kegiatan.html" class="view-all">
-                Lihat Semua →
-            </a>
-
-        </div>
-
-
-        <div class="activity-grid">
-
-
-            <div class="activity-card">
-
-                <span class="activity-number">
-                    01
-                </span>
-
-                <h3>
-                    Kaderisasi
-                </h3>
-
-                <p>
-                    Penguatan kapasitas dan proses kaderisasi
-                    anggota PMII.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <span class="activity-number">
-                    02
-                </span>
-
-                <h3>
-                    Pengabdian
-                </h3>
-
-                <p>
-                    Kegiatan sosial dan pengabdian kepada
-                    masyarakat.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <span class="activity-number">
-                    03
-                </span>
-
-                <h3>
-                    Pergerakan
-                </h3>
-
-                <p>
-                    Aktivitas intelektual dan pergerakan
-                    mahasiswa.
-                </p>
-
-            </div>
-
-
-        </div>
+      <a href="kegiatan.html" class="view-all">
+        Lihat Semua →
+      </a>
 
     </div>
+
+
+    <div class="activity-grid">
+
+      <article class="activity-card">
+
+        <strong>01</strong>
+
+        <h3>
+          Kaderisasi
+        </h3>
+
+        <p>
+          Penguatan kapasitas dan proses kaderisasi
+          anggota PMII.
+        </p>
+
+      </article>
+
+
+      <article class="activity-card">
+
+        <strong>02</strong>
+
+        <h3>
+          Pengabdian
+        </h3>
+
+        <p>
+          Kegiatan sosial dan pengabdian kepada masyarakat.
+        </p>
+
+      </article>
+
+
+      <article class="activity-card">
+
+        <strong>03</strong>
+
+        <h3>
+          Pergerakan
+        </h3>
+
+        <p>
+          Aktivitas intelektual dan pergerakan mahasiswa.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
 
 </section>
 
 
 <!-- ================= GALERI ================= -->
 
-<section class="section section-soft">
+<section class="section soft-section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-heading">
+    <div class="section-heading">
 
-            <div>
+      <div>
 
-                <span class="section-label">
-                    DOKUMENTASI
-                </span>
+        <span class="section-label">
+          DOKUMENTASI
+        </span>
 
-                <h2>
-                    Galeri
-                </h2>
+        <h2>
+          Galeri
+        </h2>
 
-            </div>
+      </div>
 
-            <a href="galeri.html" class="view-all">
-                Lihat Galeri →
-            </a>
-
-        </div>
-
-
-        <div class="gallery-preview">
-
-
-            <a href="galeri.html" class="gallery-item">
-                <span>Dokumentasi 01</span>
-            </a>
-
-            <a href="galeri.html" class="gallery-item">
-                <span>Dokumentasi 02</span>
-            </a>
-
-            <a href="galeri.html" class="gallery-item">
-                <span>Dokumentasi 03</span>
-            </a>
-
-            <a href="galeri.html" class="gallery-item">
-                <span>Dokumentasi 04</span>
-            </a>
-
-
-        </div>
+      <a href="galeri.html" class="view-all">
+        Lihat Galeri →
+      </a>
 
     </div>
 
-</section>
+
+    <div class="gallery-preview">
+
+      <a href="galeri.html">
+
+        <img
+          src="gambar/galeri-1.jpg"
+          alt="Galeri 1"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+
+        <span>
+          FOTO 01
+        </span>
+
+      </a>
 
 
-<!-- ================= TENTANG ================= -->
+      <a href="galeri.html">
 
-<section class="section">
+        <img
+          src="gambar/galeri-2.jpg"
+          alt="Galeri 2"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
 
-    <div class="container">
+        <span>
+          FOTO 02
+        </span>
 
-        <div class="about-box">
-
-            <div>
-
-                <span class="section-label">
-                    TENTANG KAMI
-                </span>
-
-                <h2>
-                    Hizbullah Media
-                </h2>
-
-                <p>
-                    Hizbullah Media merupakan ruang informasi,
-                    gagasan, dokumentasi, dan publikasi
-                    PMII Angkatan Hizbullah.
-                </p>
-
-            </div>
+      </a>
 
 
-            <a href="tentang.html" class="btn btn-primary">
-                Kenali Kami
-            </a>
+      <a href="galeri.html">
 
-        </div>
+        <img
+          src="gambar/galeri-3.jpg"
+          alt="Galeri 3"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+
+        <span>
+          FOTO 03
+        </span>
+
+      </a>
+
+
+      <a href="galeri.html">
+
+        <img
+          src="gambar/galeri-4.jpg"
+          alt="Galeri 4"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+
+        <span>
+          FOTO 04
+        </span>
+
+      </a>
 
     </div>
+
+  </div>
 
 </section>
 
@@ -792,138 +1004,160 @@
 
 <footer class="site-footer">
 
-    <div class="container footer-grid">
+  <div class="container footer-grid">
 
+    <div>
 
-        <div class="footer-brand">
+      <h2>
+        HB MEDIA
+      </h2>
 
-            <h2>
-                HIZBULLAH MEDIA
-            </h2>
+      <p>
+        Media Informasi & Pergerakan.
+      </p>
 
-            <p>
-                Media Informasi &amp; Pergerakan
-            </p>
-
-            <p>
-                Ruang informasi, gagasan, dokumentasi,
-                dan perjalanan PMII Angkatan Hizbullah.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Navigasi
-            </h3>
-
-            <a href="index.html">Beranda</a>
-            <a href="berita.html">Berita</a>
-            <a href="artikel.html">Artikel</a>
-            <a href="opini.html">Opini</a>
-            <a href="kegiatan.html">Kegiatan</a>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Hizbullah
-            </h3>
-
-            <a href="angkatan.html">Angkatan</a>
-            <a href="galeri.html">Galeri</a>
-            <a href="tentang.html">Tentang</a>
-
-        </div>
-<div class="footer-social">
-
-    <h3>Ikuti Kami</h3>
-
-    <a href="#" target="_blank" rel="noopener">
-        Instagram
-    </a>
-
-    <a href="#" target="_blank" rel="noopener">
-        Facebook
-    </a>
-
-    <a href="#" target="_blank" rel="noopener">
-        TikTok
-    </a>
-
-    <a href="#" target="_blank" rel="noopener">
-        YouTube
-    </a>
-
-    <a href="#" target="_blank" rel="noopener">
-        WhatsApp
-    </a>
-
-</div>
+      <p>
+        Ruang informasi, gagasan, dokumentasi,
+        dan perjalanan PMII Angkatan Hizbullah.
+      </p>
 
     </div>
 
 
-    <div class="footer-bottom">
+    <div>
 
-        <p>
-            © 2026 Hizbullah Media. Dilindungi Undang-Undang Hak Cipta.
-        </p>
+      <h3>
+        Navigasi
+      </h3>
+
+      <a href="index.html">Beranda</a>
+      <a href="berita.html">Berita</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="opini.html">Opini</a>
+      <a href="kegiatan.html">Kegiatan</a>
 
     </div>
+
+
+    <div>
+
+      <h3>
+        Hizbullah
+      </h3>
+
+      <a href="angkatan.html">Angkatan</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="tentang.html">Tentang</a>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 HB MEDIA.
+      Dilindungi Undang-Undang Hak Cipta.
+    </p>
+
+  </div>
 
 </footer>
 
 
-<!-- ================= JAVASCRIPT MENU ================= -->
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
-const menuBtn = document.getElementById("menuBtn");
-const mainNav = document.getElementById("mainNav");
+const menuBtn =
+  document.getElementById("menuBtn");
 
-if (menuBtn && mainNav) {
+const mainNav =
+  document.getElementById("mainNav");
 
-    menuBtn.addEventListener("click", function () {
+const searchBtn =
+  document.getElementById("searchBtn");
 
-        const isOpen = mainNav.classList.toggle("active");
+const searchPanel =
+  document.getElementById("searchPanel");
 
-        menuBtn.setAttribute(
-            "aria-expanded",
-            isOpen ? "true" : "false"
-        );
+const searchClose =
+  document.getElementById("searchClose");
 
-        menuBtn.innerHTML = isOpen ? "✕" : "☰";
+
+/* MENU HP */
+
+menuBtn.addEventListener("click", function () {
+
+  const open =
+    mainNav.classList.toggle("active");
+
+  menuBtn.setAttribute(
+    "aria-expanded",
+    open ? "true" : "false"
+  );
+
+  menuBtn.textContent =
+    open ? "✕" : "☰";
+
+});
+
+
+/* TUTUP MENU SAAT LINK DIKLIK */
+
+mainNav
+  .querySelectorAll("a")
+  .forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+      mainNav.classList.remove("active");
+
+      menuBtn.textContent = "☰";
+
+      menuBtn.setAttribute(
+        "aria-expanded",
+        "false"
+      );
 
     });
 
+  });
 
-    const navLinks = mainNav.querySelectorAll("a");
 
-    navLinks.forEach(function (link) {
+/* PENCARIAN */
 
-        link.addEventListener("click", function () {
+searchBtn.addEventListener("click", function() {
 
-            mainNav.classList.remove("active");
+  searchPanel.classList.toggle("open");
 
-            menuBtn.setAttribute(
-                "aria-expanded",
-                "false"
-            );
+  if (
+    searchPanel.classList.contains("open")
+  ) {
 
-            menuBtn.innerHTML = "☰";
+    document
+      .getElementById("searchInput")
+      .focus();
 
-        });
+  }
 
-    });
+});
 
-}
+
+/* TUTUP PENCARIAN */
+
+searchClose.addEventListener(
+  "click",
+  function() {
+
+    searchPanel.classList.remove("open");
+
+  }
+);
 
 </script>
+
 
 </body>
 </html>
